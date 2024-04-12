@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Green___Red_Holly_Analysis.kmz">
+  <name>Green &#38; Red Holly Analysis.kmz</name>
+  <snippet></snippet>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>1.500000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>ffffffff</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Folder id="FeatureLayer0">
+    <name>Green &#38; Red Holly Analysis</name>
+    <snippet></snippet>
+    <Placemark id="ID_00000">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.7808503969999,32.96211552700004,0 -101.780777528,32.94934534100003,0 -101.7565184169999,32.94900754000003,0 -101.756564301,32.96193380700004,0 -101.760653754,32.95636349800003,0 -101.763037411,32.95511953400006,0 -101.768860998,32.95599077200006,0 -101.771356315,32.95819370200007,0 -101.7688727089999,32.96157522600004,0 -101.768878614,32.96205139100005,0 -101.7808503969999,32.96211552700004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.787292721,32.94082691500006,0 -101.7872886439999,32.94083117600007,0 -101.7873091769999,32.94085377400006,0 -101.787353917,32.94089638100007,0 -101.787356744,32.94089914800003,0 -101.787365399,32.94090865800007,0 -101.7873730379999,32.94091876900006,0 -101.78737838,32.94092724000006,0 -101.787400104,32.94096480100006,0 -101.78742178,32.94099140100008,0 -101.787453091,32.94101683800005,0 -101.787464861,32.94102746700003,0 -101.7874725299999,32.94103580500007,0 -101.787515727,32.94108668300004,0 -101.787517537,32.94108885800006,0 -101.787553716,32.94113325800004,0 -101.787599456,32.94118518300007,0 -101.787657537,32.94124788900007,0 -101.787664213,32.94125564000007,0 -101.787670234,32.94126376300005,0 -101.787673023,32.94126801000004,0 -101.787703463,32.94131633400008,0 -101.7877399339999,32.94135433900004,0 -101.787786169,32.94139821400006,0 -101.787789185,32.94140115900007,0 -101.787796755,32.94140938000004,0 -101.787834399,32.94145362100005,0 -101.7878431239999,32.94146502000007,0 -101.787849689,32.94147565400004,0 -101.787855129,32.94148673000007,0 -101.787858901,32.94149661300003,0 -101.787875265,32.94154580400004,0 -101.7879146019999,32.94160515900006,0 -101.787966177,32.94168384900007,0 -101.7880120519999,32.94174448400003,0 -101.7880157929999,32.94174968100003,0 -101.788022359,32.94176031400008,0 -101.788027799,32.94177138900005,0 -101.788028675,32.94177347100003,0 -101.788068467,32.94187048200007,0 -101.788096388,32.94191853800004,0 -101.788102845,32.94193122500008,0 -101.788124604,32.94198071700004,0 -101.788129182,32.94199296000005,0 -101.7881453319999,32.94204444300004,0 -101.788148276,32.94205572300007,0 -101.7881490459999,32.94205975100004,0 -101.788164971,32.94215181000004,0 -101.788166476,32.94216484500004,0 -101.788171501,32.94225038800005,0 -101.788171701,32.94225751400006,0 -101.788171473,32.94229759800004,0 -101.7881762649999,32.94235302500005,0 -101.788176694,32.94236314500006,0 -101.7881765819999,32.94241286900007,0 -101.7881761689999,32.94242236900004,0 -101.788170446,32.94249011800002,0 -101.788168381,32.94250421500004,0 -101.7881681219999,32.94250542100008,0 -101.788158584,32.94254877400004,0 -101.7881542169999,32.94259068700006,0 -101.788153957,32.94265028500007,0 -101.788153664,32.94265803700006,0 -101.7881478629999,32.94273931200007,0 -101.7881456809999,32.94275491800005,0 -101.788144356,32.94276056300004,0 -101.788128469,32.94282149200006,0 -101.788112559,32.94289591900008,0 -101.788109511,32.94290736100004,0 -101.788105268,32.94291865400004,0 -101.7880559449999,32.94303230800006,0 -101.7880287789999,32.94309586600008,0 -101.7880232909999,32.94310707200003,0 -101.788016779,32.94311764100007,0 -101.787972966,32.94318179900006,0 -101.787972,32.94318319100006,0 -101.7879446539999,32.94322212100008,0 -101.787944128,32.94322286300007,0 -101.787911482,32.94326867300003,0 -101.787900534,32.94328215200005,0 -101.7878624049999,32.94332357500008,0 -101.787858504,32.94332765000007,0 -101.787853082,32.94333282800005,0 -101.787814908,32.94336749100006,0 -101.7878058049999,32.94337513000005,0 -101.787745947,32.94342154700007,0 -101.787740384,32.94342566900008,0 -101.7877345649999,32.94342959800008,0 -101.787685412,32.94346126200003,0 -101.787641143,32.94349486100003,0 -101.787570649,32.94354803200002,0 -101.787489385,32.94361034900004,0 -101.787487972,32.94361142100007,0 -101.787444475,32.94364400500007,0 -101.7873791,32.94369285300007,0 -101.787375771,32.94369527400005,0 -101.787361609,32.94370423400005,0 -101.787291548,32.94374374100005,0 -101.7872432139999,32.94377155200004,0 -101.787233465,32.94377674500004,0 -101.7871547349999,32.94381546800003,0 -101.787091913,32.94384935300008,0 -101.7870073349999,32.94389459500007,0 -101.786960256,32.94392682000006,0 -101.78694993,32.94393333400006,0 -101.786939026,32.94393913900007,0 -101.786936469,32.94394035800008,0 -101.7868629559999,32.94397465900005,0 -101.7868603749999,32.94397582900007,0 -101.786850737,32.94397999700004,0 -101.786848995,32.94398067400004,0 -101.786838046,32.94398449600004,0 -101.7868372039999,32.94398477200008,0 -101.786783194,32.94400163300003,0 -101.786769907,32.94400521100005,0 -101.786729489,32.94401450400005,0 -101.786672203,32.94402767600008,0 -101.786657626,32.94403042900007,0 -101.78664353,32.94403199300007,0 -101.786629326,32.94403251700004,0 -101.786626956,32.94403250300007,0 -101.78656177,32.94403170200007,0 -101.786548757,32.94403110400003,0 -101.7865358399999,32.94402963000005,0 -101.786529161,32.94402851500007,0 -101.7864767139999,32.94401879700007,0 -101.786370244,32.94400123400004,0 -101.786359354,32.94399910800007,0 -101.7863486639999,32.94399635800005,0 -101.786261832,32.94397124800003,0 -101.786258962,32.94397039300003,0 -101.7862501339999,32.94396743600004,0 -101.786177723,32.94394109000007,0 -101.786121699,32.94392326200006,0 -101.7861141129999,32.94392066200004,0 -101.786027404,32.94388878900003,0 -101.7860237359999,32.94388739500005,0 -101.785974848,32.94386819900006,0 -101.78596891,32.94386574200007,0 -101.785914706,32.94384215800005,0 -101.785860503,32.94381857500008,0 -101.785853749,32.94381546400007,0 -101.785848007,32.94381253400007,0 -101.785799409,32.94378656900005,0 -101.785790431,32.94378141100003,0 -101.785781881,32.94377575900006,0 -101.7857772789999,32.94377237900005,0 -101.785728494,32.94373515000007,0 -101.785724961,32.94373237200006,0 -101.785643701,32.94366656300008,0 -101.785635597,32.94365951500004,0 -101.7855979029999,32.94362429200004,0 -101.7855940539999,32.94362056100005,0 -101.785590767,32.94361715000008,0 -101.785547542,32.94357077800004,0 -101.785539644,32.94356154200005,0 -101.785496304,32.94350615800005,0 -101.785495206,32.94350473500003,0 -101.785417986,32.94340335100003,0 -101.785389939,32.94337271000006,0 -101.785379663,32.94336009000006,0 -101.785336515,32.94330019400007,0 -101.785334668,32.94329756100007,0 -101.785332184,32.94329379800007,0 -101.7853002479999,32.94324358900008,0 -101.785268635,32.94319572400008,0 -101.7852601229999,32.94318078300006,0 -101.785239775,32.94313873300007,0 -101.785211835,32.94310444100006,0 -101.785205065,32.94309540000006,0 -101.785145687,32.94300878500007,0 -101.785139102,32.94299812100007,0 -101.78513366,32.94298704600004,0 -101.785132719,32.94298480400005,0 -101.785089828,32.94287982100008,0 -101.785085647,32.94286784700006,0 -101.785064115,32.94279394300003,0 -101.7850618849999,32.94278502100008,0 -101.78506003,32.94277313600003,0 -101.78505941,32.94276116000003,0 -101.785059879,32.94275074500007,0 -101.7850655779999,32.94268750500004,0 -101.7850659919999,32.94268364500005,0 -101.785071591,32.94263844100004,0 -101.785072493,32.94263244000007,0 -101.7850819239999,32.94257913600006,0 -101.785081941,32.94254166200005,0 -101.785082275,32.94248274300003,0 -101.7850829289999,32.94247109800006,0 -101.785084749,32.94245954100006,0 -101.78508501,32.94245833200006,0 -101.785095776,32.94240940900005,0 -101.7851105669999,32.94233683700003,0 -101.7851178069999,32.94230131400008,0 -101.7851209459999,32.94228931700007,0 -101.785125221,32.94227788400008,0 -101.785128194,32.94227149500006,0 -101.785178152,32.94217158700008,0 -101.785197592,32.94210716600003,0 -101.7851978039999,32.94206993500006,0 -101.785198456,32.94205828900004,0 -101.785200279,32.94204673200005,0 -101.7852034909999,32.94203460400007,0 -101.785225453,32.94196636600003,0 -101.7852475829999,32.94189812400003,0 -101.785249211,32.94189343300008,0 -101.785270822,32.94183504300003,0 -101.785297054,32.94176130600005,0 -101.78531816,32.94169147400004,0 -101.785319574,32.94168709900003,0 -101.78534147,32.94162349700002,0 -101.785344771,32.94161496100003,0 -101.785372207,32.94155116200005,0 -101.785375804,32.94154353100004,0 -101.785405489,32.94148566300004,0 -101.7854382949999,32.94140033300005,0 -101.7854472929999,32.94135945700003,0 -101.785463857,32.94128274700006,0 -101.78546862,32.94126642700007,0 -101.785485224,32.94122156400005,0 -101.784500787,32.94142681500006,0 -101.783439388,32.94164811200005,0 -101.777217287,32.94294539400005,0 -101.77342083,32.93031503400005,0 -101.7585869009999,32.93349598000003,0 -101.762772521,32.94639805000003,0 -101.780781976,32.94671079700004,0 -101.7808903819999,32.94799325300005,0 -101.7895069469999,32.94798898600004,0 -101.7901701119999,32.94762413700005,0 -101.794353827,32.94762178900004,0 -101.791932055,32.93987162800005,0 -101.788481224,32.94058219000004,0 -101.788466162,32.94058529100005,0 -101.787292721,32.94082691500006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.753014805,32.96158174000004,0 -101.753215508,32.94908263200006,0 -101.7479693559999,32.94882017100008,0 -101.7477276659999,32.96164116000006,0 -101.753014805,32.96158174000004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.749860967,32.94629822000007,0 -101.751697295,32.94629769800002,0 -101.750390958,32.94157572500006,0 -101.752149418,32.94112778400006,0 -101.7526046849999,32.93955697600006,0 -101.7536941389999,32.93919632500007,0 -101.7555886979999,32.94021460200003,0 -101.757331146,32.94264514200006,0 -101.758089263,32.94505484700005,0 -101.757016616,32.94631547500006,0 -101.759003669,32.94632960000007,0 -101.7551894869999,32.93423401600006,0 -101.7463689529999,32.93614147300008,0 -101.744985304,32.93809130500006,0 -101.742962303,32.93953341600007,0 -101.741143936,32.94022325800006,0 -101.7395374499999,32.94058411400005,0 -101.7395891799999,32.94619458400007,0 -101.744667331,32.94625602000008,0 -101.744784379,32.94625743600005,0 -101.744809085,32.94620920300002,0 -101.744869313,32.94609161900007,0 -101.74487779,32.94607739500003,0 -101.744883656,32.94606946600004,0 -101.744890146,32.94606189100006,0 -101.745130692,32.94580035700005,0 -101.745134634,32.94579623900006,0 -101.745144238,32.94578740100008,0 -101.7451547219999,32.94577930200006,0 -101.745159788,32.94577585900004,0 -101.745264274,32.94570773900006,0 -101.745712601,32.94541544900005,0 -101.745721496,32.94541004200005,0 -101.7457308039999,32.94540515200003,0 -101.745743415,32.94539961600003,0 -101.745756552,32.94539502900005,0 -101.7457701119999,32.94539142400004,0 -101.7457839909999,32.94538882900002,0 -101.745789778,32.94538805900004,0 -101.74628469,32.94532985200004,0 -101.74629592,32.94532886500008,0 -101.746307206,32.94532853500004,0 -101.746310856,32.94532856900003,0 -101.7467839889999,32.94533750400007,0 -101.747051334,32.94532405200005,0 -101.747055814,32.94532386400004,0 -101.747065541,32.94532355500007,0 -101.7470795,32.94532406900004,0 -101.747092879,32.94532551900005,0 -101.74709384,32.94532564200006,0 -101.7471218329999,32.94532965800005,0 -101.747779226,32.94542398000004,0 -101.748284256,32.94549836700003,0 -101.748298263,32.94550098000008,0 -101.7483118229999,32.94550458600003,0 -101.7483249589999,32.94550917300006,0 -101.74833757,32.94551470900007,0 -101.748347601,32.94552001000005,0 -101.748357149,32.94552591200005,0 -101.748542893,32.94564971300008,0 -101.748797791,32.94581960500005,0 -101.748801483,32.94582214200005,0 -101.748810329,32.94582888000008,0 -101.7491925,32.94614214700005,0 -101.749203743,32.94615234700007,0 -101.7492123979999,32.94616185800004,0 -101.749220037,32.94617196900003,0 -101.74922252,32.94617573000005,0 -101.7492597519999,32.94623426500004,0 -101.7493005329999,32.94629837900004,0 -101.749860967,32.94629822000007,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.7444870959999,32.95970820400004,0 -101.744629737,32.95303219400006,0 -101.738958097,32.95302219000007,0 -101.7389213879999,32.95763064500005,0 -101.741212868,32.95823056900008,0 -101.7444870959999,32.95970820400004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.733997721,32.95742561800006,0 -101.735730551,32.95736440000007,0 -101.735778849,32.94891325800006,0 -101.72045933,32.94891351600006,0 -101.720443756,32.95094968000006,0 -101.72271691,32.95148668400003,0 -101.7251631239999,32.95252567000006,0 -101.728391586,32.95274137500007,0 -101.731291321,32.95401766400005,0 -101.733088795,32.95575353000004,0 -101.733997721,32.95742561800006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.736383621,32.94615189100006,0 -101.736371655,32.94199238700003,0 -101.725153811,32.94197731800006,0 -101.725054139,32.94608126400004,0 -101.736383621,32.94615189100006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.712186048,32.95056899400004,0 -101.7121961779999,32.95058252000007,0 -101.714725376,32.95072499500003,0 -101.7171848199999,32.95060349000005,0 -101.717190187,32.94891372800004,0 -101.7116893039999,32.94893779900008,0 -101.711683282,32.94985091000007,0 -101.711681933,32.95005541600005,0 -101.711703404,32.95007087400006,0 -101.7119412499999,32.95024212200008,0 -101.711955927,32.95025268900002,0 -101.711965831,32.95026044100007,0 -101.7119749399999,32.95026885800007,0 -101.711983595,32.95027836900005,0 -101.711991235,32.95028848000004,0 -101.711993297,32.95029158300002,0 -101.712036273,32.95035827100003,0 -101.71203909,32.95036284400004,0 -101.712066221,32.95040899200006,0 -101.712186048,32.95056899400004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.708496827,32.94893643100005,0 -101.697353264,32.94891028300003,0 -101.696568917,32.95069305500004,0 -101.7008249309999,32.95150415500007,0 -101.703509519,32.95265514000005,0 -101.705891358,32.95159268600003,0 -101.708465528,32.95090054900004,0 -101.708496827,32.94893643100005,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.697332387,32.93917356300005,0 -101.6973647729999,32.93921118300005,0 -101.697374022,32.93922319900003,0 -101.6973748029999,32.93922435100006,0 -101.697400678,32.93926299800006,0 -101.697448278,32.93933049800006,0 -101.697449337,32.93933202300008,0 -101.697456591,32.93934392000006,0 -101.697459661,32.93934962100008,0 -101.6974644109999,32.93935943400004,0 -101.697468687,32.93937086700004,0 -101.697471765,32.93938257100007,0 -101.6974736189999,32.93939445700005,0 -101.69747424,32.93940643300004,0 -101.697474202,32.93940940400006,0 -101.6974728819999,32.93946089300005,0 -101.697462257,32.93987529000003,0 -101.697410717,32.94188556100005,0 -101.6974099719999,32.94189604600007,0 -101.6974082789999,32.94190645400005,0 -101.697405202,32.94191815700003,0 -101.697400927,32.94192959100008,0 -101.6973954859999,32.94194066700004,0 -101.69738892,32.94195129900004,0 -101.697381282,32.94196141100008,0 -101.6973726269999,32.94197092100006,0 -101.6973649609999,32.94197809700006,0 -101.6973567159999,32.94198480000006,0 -101.697380261,32.94209139400004,0 -101.697475551,32.94252279800003,0 -101.697793706,32.94396317200005,0 -101.697849143,32.94603680700004,0 -101.70494056,32.94604029800007,0 -101.704936323,32.94347313300005,0 -101.701482961,32.93265886200004,0 -101.6983630939999,32.92270315300004,0 -101.695481036,32.92386606300005,0 -101.697226841,32.92688554100005,0 -101.6979858459999,32.93152337700008,0 -101.6973005949999,32.93502834100008,0 -101.6967480229999,32.93632714500006,0 -101.695474916,32.93835347900006,0 -101.695550531,32.93845716000004,0 -101.695738567,32.93871499200003,0 -101.6957395059999,32.93871627700003,0 -101.6957469709999,32.93871517600007,0 -101.6967181639999,32.93873652800005,0 -101.696730234,32.93873717200006,0 -101.696742217,32.93873856900007,0 -101.6967560959999,32.93874116400008,0 -101.696769655,32.93874476900004,0 -101.6967827889999,32.93874935600007,0 -101.6967954,32.93875489200008,0 -101.696803372,32.93875903500003,0 -101.696852018,32.93878597300005,0 -101.696867316,32.93879556900004,0 -101.696872502,32.93879939800007,0 -101.696924872,32.93883975700004,0 -101.697004303,32.93889760800005,0 -101.69701445,32.93890566300007,0 -101.697049745,32.93893618100003,0 -101.69711097,32.93897612800004,0 -101.697116012,32.93897955500006,0 -101.697180912,32.93902550100006,0 -101.697191375,32.93903358900008,0 -101.697200964,32.93904241400003,0 -101.697205572,32.93904726400007,0 -101.697269435,32.93911767500003,0 -101.697316319,32.93915761100004,0 -101.697325343,32.93916595800005,0 -101.69732871,32.93916959300003,0 -101.697332387,32.93917356300005,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.7219605129999,32.94613228800006,0 -101.721925189,32.94185437300007,0 -101.7201808569999,32.94180848300005,0 -101.7178304609999,32.94229456500005,0 -101.710830809,32.94382109700007,0 -101.7080226529999,32.94445844100005,0 -101.708120327,32.94607422900003,0 -101.7219605129999,32.94613228800006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.7075531259999,32.94156330100003,0 -101.715226479,32.93994652600003,0 -101.7135632929999,32.93819127800003,0 -101.712587899,32.93587411700003,0 -101.712510966,32.93392055500004,0 -101.7129521749999,32.93240323900005,0 -101.713514235,32.93119533000004,0 -101.711890932,32.92997707800004,0 -101.710972602,32.92892947700005,0 -101.704011581,32.93047888200005,0 -101.7075531259999,32.94156330100003,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.702670122,32.91926830000006,0 -101.702646075,32.91929302600005,0 -101.702653712,32.91930313700004,0 -101.7026602769999,32.91931377100008,0 -101.702665716,32.91932484700004,0 -101.7026699899999,32.91933627900005,0 -101.702673067,32.91934798300008,0 -101.702675241,32.91936350400005,0 -101.7026754249999,32.91936606200005,0 -101.7026806709999,32.91943879700005,0 -101.7027381359999,32.91948124500004,0 -101.702807152,32.91948731300005,0 -101.7028185519999,32.91948866000007,0 -101.702832428,32.91949125500003,0 -101.702845985,32.91949485900005,0 -101.702859116,32.91949944700008,0 -101.702871724,32.91950498200003,0 -101.702883711,32.91951142400006,0 -101.702894988,32.91951872100003,0 -101.702905468,32.91952682000004,0 -101.70291507,32.91953565900008,0 -101.70291781,32.91953848900005,0 -101.703072861,32.91970302800007,0 -101.703184081,32.91971785400006,0 -101.703336784,32.91972605000007,0 -101.703354728,32.91972786000008,0 -101.7033681139999,32.91973034400007,0 -101.703550681,32.91977108900005,0 -101.7035647289999,32.91977480300005,0 -101.703577861,32.91977939200007,0 -101.7035904689999,32.91978492600003,0 -101.703602457,32.91979136800006,0 -101.7036137329999,32.91979866600008,0 -101.703624213,32.91980676600008,0 -101.703633815,32.91981560300007,0 -101.7036424679999,32.91982511400005,0 -101.703650105,32.91983522500004,0 -101.7036566689999,32.91984585800003,0 -101.7036621079999,32.91985693500004,0 -101.7036663819999,32.91986836800004,0 -101.703669459,32.91988007100008,0 -101.7036716329999,32.91989558900008,0 -101.703673399,32.91992007300007,0 -101.703684778,32.92007783200006,0 -101.703685079,32.92008617700003,0 -101.703684459,32.92009815300003,0 -101.7036826039999,32.92011004000005,0 -101.703679527,32.92012174400003,0 -101.703675253,32.92013317600004,0 -101.703669814,32.92014425200006,0 -101.70366325,32.92015488500004,0 -101.703655613,32.92016499700003,0 -101.7036469609999,32.92017450700007,0 -101.703637407,32.92018331700007,0 -101.703773097,32.92039882500006,0 -101.703778051,32.92040740300007,0 -101.703782287,32.92041625100006,0 -101.703786561,32.92042768300007,0 -101.703789638,32.92043938700004,0 -101.703791493,32.92045127300003,0 -101.703792114,32.92046325000007,0 -101.703791493,32.92047522600006,0 -101.703789638,32.92048711200005,0 -101.703786561,32.92049881600008,0 -101.703782287,32.92051025000006,0 -101.703776848,32.92052132600003,0 -101.703770284,32.92053195900007,0 -101.703762647,32.92054206900008,0 -101.7037539949999,32.92055158100004,0 -101.703744392,32.92056041900003,0 -101.703733912,32.92056851800004,0 -101.7037296889999,32.92057140600008,0 -101.703539182,32.92069733700004,0 -101.703529889,32.92070304500004,0 -101.703520141,32.92070818700006,0 -101.703507534,32.92071372100003,0 -101.703494402,32.92071830900005,0 -101.703481445,32.92072177800003,0 -101.703468191,32.92072432400005,0 -101.7034521639999,32.92072681400003,0 -101.7034649129999,32.92090358100006,0 -101.7034652149999,32.92091192500004,0 -101.703464594,32.92092390200003,0 -101.703462739,32.92093578900005,0 -101.7034596619999,32.92094749300003,0 -101.703455388,32.92095892500004,0 -101.7034499489999,32.92097000000007,0 -101.703443385,32.92098063400005,0 -101.7034357479999,32.92099074600003,0 -101.7034270949999,32.92100025700006,0 -101.703417494,32.92100909500004,0 -101.7034070129999,32.92101719400006,0 -101.7033957359999,32.92102449200007,0 -101.703383748,32.92103093300005,0 -101.7033711399999,32.92103646800007,0 -101.703358008,32.92104105700002,0 -101.703344452,32.92104466100005,0 -101.7033305749999,32.92104725600007,0 -101.7033242319999,32.92104809000006,0 -101.703138109,32.92106943500005,0 -101.703204005,32.92111193700003,0 -101.7033714679999,32.92121994400003,0 -101.7033772249999,32.92122383400005,0 -101.703387705,32.92123193400005,0 -101.703397307,32.92124077200003,0 -101.7034059599999,32.92125028200007,0 -101.703413597,32.92126039300007,0 -101.70342016,32.92127102600006,0 -101.7034255999999,32.92128210300007,0 -101.7034298739999,32.92129353600006,0 -101.703432951,32.92130523900005,0 -101.703434806,32.92131712500003,0 -101.7034354259999,32.92132910300006,0 -101.703434806,32.92134107900006,0 -101.703432951,32.92135296400005,0 -101.7034298739999,32.92136466900007,0 -101.7034255999999,32.92137610100008,0 -101.7034201609999,32.92138717700004,0 -101.703413597,32.92139781100008,0 -101.7034059599999,32.92140792200007,0 -101.703397307,32.92141743200006,0 -101.703387704,32.92142627000004,0 -101.7033772249999,32.92143437000004,0 -101.7033659479999,32.92144166900005,0 -101.70335396,32.92144811000003,0 -101.7033413519999,32.92145364500004,0 -101.7033282199999,32.92145823200008,0 -101.7033146639999,32.92146183800003,0 -101.703300787,32.92146443300004,0 -101.703292816,32.92146544700006,0 -101.7030315549999,32.92149314600005,0 -101.702856975,32.92158577400005,0 -101.7030226099999,32.92158667800004,0 -101.703036281,32.92158723800003,0 -101.703049847,32.92158876300005,0 -101.7030637239999,32.92159135900005,0 -101.7030772799999,32.92159496400006,0 -101.703093047,32.92160061200008,0 -101.70323704,32.92165991400003,0 -101.703247013,32.92166438900006,0 -101.703259001,32.92167083000004,0 -101.703270278,32.92167812800005,0 -101.7032807579999,32.92168622700007,0 -101.7032903589999,32.92169506400006,0 -101.703299013,32.92170457600002,0 -101.703306651,32.92171468700008,0 -101.703311917,32.92172302800003,0 -101.703316489,32.92173165500003,0 -101.703363433,32.92182906900007,0 -101.703365597,32.92183381000007,0 -101.7033698719999,32.92184524400005,0 -101.703372948,32.92185694800003,0 -101.7033751229999,32.92187246500004,0 -101.703386648,32.92203226200007,0 -101.7033942419999,32.92213754700003,0 -101.7033945429999,32.92214589100007,0 -101.703393923,32.92215786800006,0 -101.703392068,32.92216975300005,0 -101.7033889909999,32.92218145700008,0 -101.7033847169999,32.92219289100007,0 -101.7033792779999,32.92220396600004,0 -101.703372714,32.92221460000007,0 -101.703371912,32.92221575900004,0 -101.703299532,32.92231914600006,0 -101.7032922389999,32.92232864600004,0 -101.703284044,32.92233760800008,0 -101.703274441,32.92234644700005,0 -101.7032639609999,32.92235454600007,0 -101.7032526849999,32.92236184400008,0 -101.703240696,32.92236828400007,0 -101.703230182,32.92237298200007,0 -101.703222571,32.92237580300008,0 -101.70321929,32.92237701900007,0 -101.702982908,32.92245607500007,0 -101.70290362,32.92258281900007,0 -101.7029006179999,32.92258740400007,0 -101.702892981,32.92259751500006,0 -101.702884328,32.92260702500005,0 -101.702874725,32.92261586400008,0 -101.7028642449999,32.92262396300004,0 -101.7028529679999,32.92263126100005,0 -101.70284098,32.92263770200003,0 -101.702828373,32.92264323800003,0 -101.7028152399999,32.92264782500007,0 -101.7028078929999,32.92264991500008,0 -101.7026511829999,32.92269101300008,0 -101.702643805,32.92269278900005,0 -101.702468251,32.92273128700003,0 -101.702371297,32.92277792400006,0 -101.702359044,32.92278325200004,0 -101.702346301,32.92278768700004,0 -101.702332745,32.92279129200006,0 -101.702318868,32.92279388700007,0 -101.7023135379999,32.92279460300006,0 -101.702081415,32.92282243500006,0 -101.702076074,32.92282305200007,0 -101.702067315,32.92282393100004,0 -101.702064626,32.92282409800004,0 -101.7020531159999,32.92282448500004,0 -101.702038917,32.92282396200005,0 -101.702024823,32.92282239700006,0 -101.702010947,32.92281980200005,0 -101.70199739,32.92281619700003,0 -101.701984258,32.92281161000005,0 -101.70197165,32.92280607400005,0 -101.701959662,32.92279963300007,0 -101.701948384,32.92279233500005,0 -101.701940429,32.92278624600004,0 -101.7019379279999,32.92278421000003,0 -101.7019329399999,32.92277976400004,0 -101.701928255,32.92277544800004,0 -101.70190956,32.92275830300002,0 -101.701723842,32.92278997100004,0 -101.701719847,32.92279060900006,0 -101.701715715,32.92279117700008,0 -101.7016203269999,32.92280324000006,0 -101.701621568,32.92280717700004,0 -101.7018168119999,32.92342920500005,0 -101.703056293,32.92737806500003,0 -101.709812664,32.92598835000007,0 -101.7099124269999,32.92393302300007,0 -101.710960137,32.92173524800006,0 -101.7131112169999,32.91957062300003,0 -101.714953721,32.91864461800003,0 -101.71314892,32.91327814600004,0 -101.7071599559999,32.91432775500004,0 -101.7052241169999,32.91470253900007,0 -101.7045444139999,32.91639579100007,0 -101.7030465729999,32.91888121200003,0 -101.702670122,32.91926830000006,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.712371887,32.91053483300004,0 -101.708773665,32.89910698900007,0 -101.7034211979999,32.90013433500008,0 -101.701806211,32.90243271100007,0 -101.702894262,32.90376988500003,0 -101.704621064,32.90627948700006,0 -101.705677001,32.90940165000006,0 -101.705789786,32.91179976200004,0 -101.712371887,32.91053483300004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.70939779,32.89603915500004,0 -101.705759234,32.88433051200008,0 -101.7046880669999,32.88499837600006,0 -101.703868076,32.88496794800005,0 -101.7029764499999,32.88532073900006,0 -101.702304576,32.88530102600004,0 -101.701407371,32.88565393200003,0 -101.700739003,32.88561151700003,0 -101.700618038,32.88570088500006,0 -101.7015634429999,32.88660989600004,0 -101.7034111249999,32.88941385800007,0 -101.704531748,32.89274091100003,0 -101.704717191,32.89517900500005,0 -101.704471395,32.89711174400003,0 -101.70939779,32.89603915500004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.723183025,32.90812845000005,0 -101.725645792,32.90757346900006,0 -101.726902923,32.90646724700002,0 -101.7284463139999,32.90521156400007,0 -101.7300885079999,32.90465160100007,0 -101.7297703569999,32.90370323200005,0 -101.729577934,32.90312964300006,0 -101.729548691,32.90304247400007,0 -101.729456898,32.90307901300002,0 -101.729329632,32.90312967100004,0 -101.729228651,32.90314691900005,0 -101.72922461,32.90314756400005,0 -101.7292060189999,32.90314940800005,0 -101.729066841,32.90315640800003,0 -101.728947546,32.90316240800007,0 -101.7289378519999,32.90316265200005,0 -101.728923654,32.90316212900007,0 -101.728909565,32.90316056500006,0 -101.728908288,32.90316037000002,0 -101.728746829,32.90313523400005,0 -101.7287336049999,32.90313269100005,0 -101.7287206779999,32.90312922800007,0 -101.7287075469999,32.90312464100003,0 -101.7286949419999,32.90311910500003,0 -101.7286874489999,32.90311522400003,0 -101.72853594,32.90303192700003,0 -101.728327696,32.90296534900006,0 -101.728313984,32.90296034700003,0 -101.72803146,32.90284403700008,0 -101.727861261,32.90278670700008,0 -101.7276075409999,32.90270124400007,0 -101.727596837,32.90269725700006,0 -101.7275865,32.90269263200003,0 -101.727575139,32.90268655600005,0 -101.727564409,32.90267971200007,0 -101.727207214,32.90243162200005,0 -101.727206046,32.90243080200003,0 -101.7272034599999,32.90242893200008,0 -101.726974136,32.90225956500007,0 -101.7269715899999,32.90225764200005,0 -101.726963685,32.90225143400005,0 -101.726962492,32.90225040800004,0 -101.7269540679999,32.90224261500003,0 -101.7269479999999,32.90223602300006,0 -101.726945397,32.90223312200004,0 -101.7267626409999,32.90202499300005,0 -101.726543926,32.90186347800005,0 -101.726534838,32.90185622800004,0 -101.726526435,32.90184841100006,0 -101.7265177849999,32.90183890000003,0 -101.72651015,32.90182879000002,0 -101.726503588,32.90181815600005,0 -101.7264981499999,32.90180708100007,0 -101.7264938759999,32.90179564700003,0 -101.7264908,32.90178394300005,0 -101.726488628,32.90176845800005,0 -101.726479411,32.90164114100003,0 -101.726374087,32.90151303900006,0 -101.726366868,32.90150343100004,0 -101.7263603059999,32.90149279700006,0 -101.726354868,32.90148172100004,0 -101.7263545009999,32.90148086200003,0 -101.7262581799999,32.90125291100003,0 -101.726254134,32.90124189500006,0 -101.726251197,32.90123063200008,0 -101.726249025,32.90121514700007,0 -101.72623823,32.90106603600003,0 -101.7262279609999,32.90092419200005,0 -101.726214241,32.90073467900004,0 -101.726213939,32.90072630200007,0 -101.726214558,32.90071432600007,0 -101.726216413,32.90070244000003,0 -101.726219489,32.90069073600006,0 -101.726223762,32.90067930300006,0 -101.726229201,32.90066822700004,0 -101.726235762,32.90065759300006,0 -101.726243398,32.90064748300006,0 -101.726252049,32.90063797200003,0 -101.726261649,32.90062913300005,0 -101.726272127,32.90062103400004,0 -101.726283106,32.90061391000006,0 -101.726547892,32.90045676600005,0 -101.726650256,32.90022463500003,0 -101.726655541,32.90021403300005,0 -101.726661857,32.90020383900003,0 -101.726669492,32.90019372900008,0 -101.7266781439999,32.90018421800005,0 -101.7266877439999,32.90017537900007,0 -101.726698221,32.90016728000006,0 -101.726709495,32.90015998200005,0 -101.72672148,32.90015354100007,0 -101.726730574,32.90014943000006,0 -101.7268420939999,32.90010278800003,0 -101.7270111619999,32.89995972000003,0 -101.727021816,32.89995146900003,0 -101.727103158,32.89992052300005,0 -101.728173387,32.89951335800004,0 -101.728354204,32.89958008100007,0 -101.728412336,32.89960153200008,0 -101.727975014,32.89831374800008,0 -101.726930322,32.89523743700005,0 -101.711900583,32.89836562100004,0 -101.7154538079999,32.90987021700005,0 -101.716823512,32.90956155600003,0 -101.71713799,32.90949068900005,0 -101.717188715,32.90946801300004,0 -101.7173175249999,32.90942203200007,0 -101.7174506169999,32.90938565100004,0 -101.71758698,32.90935914700003,0 -101.717725575,32.90934272100003,0 -101.7178116059999,32.90933889100006,0 -101.7182812359999,32.90923306100007,0 -101.718284312,32.90922080600006,0 -101.7182870729999,32.90921144700008,0 -101.718290603,32.90920227400005,0 -101.718292291,32.90919853500003,0 -101.7183190979999,32.90914162100006,0 -101.718351238,32.90907331800003,0 -101.718356016,32.90906415300003,0 -101.718361572,32.90905530600003,0 -101.718365567,32.90904977500003,0 -101.71842975,32.90896544500004,0 -101.718498276,32.90887362900003,0 -101.7185293429999,32.90882941700005,0 -101.718536574,32.90882002000006,0 -101.7185446889999,32.90881115300004,0 -101.718550898,32.90880526200004,0 -101.718610234,32.90875212600002,0 -101.718612862,32.90874982700007,0 -101.718677803,32.90869431500005,0 -101.718689044,32.90868556800007,0 -101.7187042149999,32.90867603800007,0 -101.7188014389999,32.90862207900005,0 -101.718809528,32.90861787000006,0 -101.718826413,32.90861071300003,0 -101.718914291,32.90857874400007,0 -101.718918601,32.90857721500004,0 -101.7189274309999,32.90857418300004,0 -101.7189286669999,32.90857383800005,0 -101.7189409219999,32.90857036800003,0 -101.7190585769999,32.90853491500008,0 -101.7190689559999,32.90853213500003,0 -101.719079531,32.90852994500005,0 -101.719166409,32.90851452800007,0 -101.719171654,32.90851367300007,0 -101.719183652,32.90851227500008,0 -101.71919574,32.90851163200006,0 -101.719255324,32.90851033500007,0 -101.719259526,32.90851028900005,0 -101.719267652,32.90851046000006,0 -101.719396488,32.90851588700008,0 -101.719446655,32.90851159200002,0 -101.719498222,32.90850267400003,0 -101.719502651,32.90850196200006,0 -101.7195167419999,32.90850039700007,0 -101.71953094,32.90849987400003,0 -101.7195351779999,32.90849991900006,0 -101.719638295,32.90850218400004,0 -101.719643219,32.90850235500005,0 -101.7197082819999,32.90850544500006,0 -101.71972741,32.90850731700004,0 -101.719729937,32.90850771000004,0 -101.719827794,32.90852361200007,0 -101.71983959,32.90852591500004,0 -101.71985115,32.90852895100005,0 -101.71992177,32.90854995500007,0 -101.719923315,32.90855042100003,0 -101.719936445,32.90855501000004,0 -101.7199490519999,32.90856054500006,0 -101.71995018,32.90856110000004,0 -101.720002818,32.90858721100005,0 -101.7200706419999,32.90860821500007,0 -101.720076413,32.90861010800006,0 -101.720174318,32.90864404100006,0 -101.7201842489999,32.90864781500005,0 -101.7201938589999,32.90865214100006,0 -101.720205845,32.90865858100005,0 -101.720217121,32.90866588000006,0 -101.720219844,32.90866785000003,0 -101.7203197159999,32.90874176400007,0 -101.720356002,32.90876551500003,0 -101.72059547,32.90871155100007,0 -101.720627489,32.90869749200004,0 -101.7207567149999,32.90865230900005,0 -101.7208901389999,32.90861675400004,0 -101.7210267459999,32.90859109700006,0 -101.721165497,32.90857553200004,0 -101.721205934,32.90857398400004,0 -101.721934243,32.90840986100005,0 -101.7219348959999,32.90840961900005,0 -101.7220674329999,32.90837169000002,0 -101.722203402,32.90834360400004,0 -101.722262353,32.90833592200005,0 -101.723183025,32.90812845000005,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.716307275,32.91240800500003,0 -101.718001693,32.91807197600008,0 -101.7190773359999,32.91806000300005,0 -101.720683591,32.91836275800006,0 -101.7227295499999,32.91906192000005,0 -101.724166736,32.91998959800003,0 -101.725767909,32.92164170700005,0 -101.725155086,32.92029007000008,0 -101.7249287829999,32.91806041200005,0 -101.7252059899999,32.91651517400004,0 -101.725778056,32.91518173200006,0 -101.7248317629999,32.91340521600006,0 -101.7244355239999,32.91181816300008,0 -101.724504097,32.91065289400007,0 -101.716307275,32.91240800500003,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.729153165,32.93692728900004,0 -101.730732986,32.93658905200004,0 -101.7301654409999,32.93520274900004,0 -101.729910325,32.93423498800007,0 -101.72988408,32.93302252700005,0 -101.730055735,32.93196136000006,0 -101.73037005,32.93094756100004,0 -101.7310897199999,32.92983076000007,0 -101.731798151,32.92895796500005,0 -101.732727873,32.92809848200005,0 -101.733572662,32.92746199800007,0 -101.7350713929999,32.92682912200007,0 -101.734911749,32.92618490900003,0 -101.7347170909999,32.92555576600006,0 -101.733613281,32.92554813100003,0 -101.7323432919999,32.92546237900007,0 -101.7313761029999,32.92543279500006,0 -101.730503286,32.92511463500006,0 -101.729580294,32.92491824900003,0 -101.7283552759999,32.92518240700008,0 -101.727580016,32.92524625300007,0 -101.726955504,32.92552227800007,0 -101.726805428,32.92626104200008,0 -101.726561373,32.92737754500007,0 -101.726145182,32.92820977100007,0 -101.725802363,32.92879801800007,0 -101.726260494,32.92900538500004,0 -101.7271336219999,32.92952245800006,0 -101.727782055,32.93035223600003,0 -101.7283236499999,32.93100778000007,0 -101.72893306,32.93200542500006,0 -101.7292918749999,32.93293858300007,0 -101.729642602,32.93412010500003,0 -101.729534326,32.93573189200004,0 -101.729153165,32.93692728900004,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.7337362819999,32.93941252000008,0 -101.7337841039999,32.94007186800008,0 -101.733784409,32.94008025700003,0 -101.733783789,32.94009223200004,0 -101.733781933,32.94010411900007,0 -101.733778856,32.94011582200005,0 -101.733774581,32.94012725600004,0 -101.73376914,32.94013833100007,0 -101.7337625759999,32.94014896400006,0 -101.733759037,32.94015388900004,0 -101.733053059,32.94109177600006,0 -101.733049407,32.94109661800007,0 -101.733045336,32.94110182400004,0 -101.7330433339999,32.94110414900007,0 -101.73303671,32.94111135600008,0 -101.733027105,32.94112019600004,0 -101.733016623,32.94112829500006,0 -101.733005344,32.94113559300007,0 -101.732993354,32.94114203400005,0 -101.7329807419999,32.94114757000006,0 -101.732967607,32.94115215700003,0 -101.7329543609999,32.94115567900008,0 -101.732941435,32.94115814200006,0 -101.732940168,32.94115836000003,0 -101.732592311,32.94121247900006,0 -101.731710597,32.94134965400008,0 -101.731709328,32.94134984600004,0 -101.731695232,32.94135141200007,0 -101.731681029,32.94135193500006,0 -101.731666825,32.94135141200007,0 -101.731652729,32.94134984700003,0 -101.731641417,32.94134781400004,0 -101.731630303,32.94134510900005,0 -101.731268244,32.94124511600006,0 -101.730836454,32.94112586400007,0 -101.730831441,32.94112440200007,0 -101.730818307,32.94111981600003,0 -101.7308056959999,32.94111427900003,0 -101.730793706,32.94110783900004,0 -101.730782425,32.94110054100003,0 -101.730771944,32.94109244200007,0 -101.730762339,32.94108360300004,0 -101.7307532789999,32.94107360100003,0 -101.7302414069999,32.94045143000005,0 -101.730234175,32.94044181000004,0 -101.7302276089999,32.94043117700005,0 -101.7302221689999,32.94042010200008,0 -101.730217894,32.94040866900008,0 -101.730214817,32.94039696500005,0 -101.7302129609999,32.94038507900007,0 -101.730212342,32.94037310100003,0 -101.7302128969999,32.94036176300006,0 -101.730283084,32.93964699300005,0 -101.729931157,32.93974454000005,0 -101.725841488,32.94087810900004,0 -101.72516459,32.94102080000005,0 -101.7250282909999,32.94144174700006,0 -101.725212965,32.94200430200004,0 -101.736373959,32.94201634900003,0 -101.73636738,32.94037769100004,0 -101.734588904,32.93980938700003,0 -101.7340491849999,32.93955816600004,0 -101.734035945,32.93955200300007,0 -101.73391208,32.93949434800004,0 -101.733759881,32.93942350400005,0 -101.733736092,32.93940991400007,0 -101.7337362819999,32.93941252000008,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.746616697,32.93122814700007,0 -101.746652544,32.93130123900005,0 -101.7469936269999,32.93309576500008,0 -101.754369616,32.93159604100003,0 -101.7514692409999,32.92221328800008,0 -101.7514097499999,32.92221629100004,0 -101.750720714,32.92225107100006,0 -101.750528952,32.92226075000008,0 -101.7505192199999,32.92226099600003,0 -101.75050502,32.92226047300005,0 -101.7504909259999,32.92225890800006,0 -101.750477049,32.92225631300005,0 -101.750463493,32.92225270900008,0 -101.750444721,32.92224579000003,0 -101.749955141,32.92203350200003,0 -101.749641624,32.92189755800007,0 -101.7496346569999,32.92189435300003,0 -101.749622669,32.92188791200005,0 -101.749611392,32.92188061300004,0 -101.7496009119999,32.92187251400003,0 -101.749591309,32.92186367500005,0 -101.749582656,32.92185416500007,0 -101.749575019,32.92184405500007,0 -101.749568456,32.92183342000004,0 -101.749563015,32.92182234600006,0 -101.749558742,32.92181091200007,0 -101.7495556649999,32.92179920700005,0 -101.749553496,32.92178375800006,0 -101.749516778,32.92127879000003,0 -101.74942006,32.92092779200004,0 -101.7493338359999,32.92061487700005,0 -101.7489426989999,32.92069876700003,0 -101.7458208909999,32.92136832400007,0 -101.740458357,32.92245113500007,0 -101.739443051,32.92363292100003,0 -101.7376443859999,32.92464207900008,0 -101.738174127,32.92610815900008,0 -101.739139553,32.92636721800005,0 -101.742392336,32.92705024800006,0 -101.7434226399999,32.92757941700006,0 -101.743511568,32.92762778100007,0 -101.743574403,32.92724838400005,0 -101.743575543,32.92724140200005,0 -101.743576364,32.92723651500006,0 -101.743579441,32.92722481200008,0 -101.743583716,32.92721337800003,0 -101.743589156,32.92720230300006,0 -101.743595719,32.92719166900002,0 -101.743603357,32.92718155900008,0 -101.743612011,32.92717204800005,0 -101.7436216139999,32.92716320800002,0 -101.743632094,32.92715511000006,0 -101.743643372,32.92714781200004,0 -101.743655361,32.92714137100006,0 -101.7436679689999,32.92713583600005,0 -101.743681102,32.92713124800002,0 -101.743694665,32.92712766400007,0 -101.7436957629999,32.92712741700007,0 -101.743708489,32.92712483000003,0 -101.744461363,32.92695921700005,0 -101.744474141,32.92695686700006,0 -101.7444882349999,32.92695530200007,0 -101.7445024369999,32.92695477900003,0 -101.744519259,32.92695551300005,0 -101.745458618,32.92703773900007,0 -101.7454700929999,32.92703909300008,0 -101.7454839709999,32.92704168600005,0 -101.745497884,32.92704540300008,0 -101.746930746,32.92749161400008,0 -101.746943511,32.92749611800008,0 -101.7469557759999,32.92750151800004,0 -101.746967765,32.92750795900002,0 -101.746979043,32.92751525600005,0 -101.746989523,32.92752335600005,0 -101.746999126,32.92753219500003,0 -101.74700778,32.92754170600006,0 -101.747015418,32.92755181500007,0 -101.747020665,32.92756012800004,0 -101.747025228,32.92756872400003,0 -101.74757469,32.92870728400004,0 -101.747576884,32.92871208600008,0 -101.747581159,32.92872351900007,0 -101.747584236,32.92873522300005,0 -101.747586091,32.92874710800004,0 -101.7475867109999,32.92875908600007,0 -101.747586583,32.92876453700006,0 -101.747525631,32.93005802800008,0 -101.747525362,32.93006347200003,0 -101.7475249079999,32.93006999900007,0 -101.747524574,32.93007270600003,0 -101.7475230919999,32.93008188700003,0 -101.747520015,32.93009359100006,0 -101.74751574,32.93010502400006,0 -101.7475103,32.93011610000008,0 -101.7475037359999,32.93012673400005,0 -101.7474960979999,32.93013684400006,0 -101.747487445,32.93014635500003,0 -101.747477841,32.93015519400006,0 -101.74746736,32.93016329300008,0 -101.747456082,32.93017059200002,0 -101.747444093,32.93017703200007,0 -101.747433596,32.93018167800005,0 -101.7474314739999,32.93018254100008,0 -101.747422733,32.93018568700006,0 -101.74741836,32.93018718400003,0 -101.74737679,32.93020110500004,0 -101.746553489,32.93047681200005,0 -101.746511507,32.93049087200006,0 -101.746507106,32.93049228300004,0 -101.7464935469999,32.93049588800005,0 -101.7464796689999,32.93049848200008,0 -101.746465576,32.93050004700007,0 -101.7464513739999,32.93050057000005,0 -101.746437172,32.93050004700007,0 -101.746423078,32.93049848200008,0 -101.7464092,32.93049588800005,0 -101.746395641,32.93049228300004,0 -101.7463825089999,32.93048769500007,0 -101.7463699,32.93048215900006,0 -101.7463624329999,32.93047829500006,0 -101.7462070939999,32.93039295700004,0 -101.7462428439999,32.93046585400003,0 -101.746308966,32.93058084900008,0 -101.746422361,32.93083189200007,0 -101.746616697,32.93122814700007,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.744470287,32.91864669100005,0 -101.741919658,32.91056819900007,0 -101.744855345,32.90991586000007,0 -101.743771636,32.90958206700003,0 -101.74239117,32.90888108800004,0 -101.741453388,32.90819771800005,0 -101.740356834,32.90714596600003,0 -101.739943324,32.90720883900008,0 -101.741238658,32.90937661400005,0 -101.741545904,32.91163334900006,0 -101.741260057,32.91337586400005,0 -101.7406557799999,32.91462774200005,0 -101.741682294,32.91649478700003,0 -101.7419956529999,32.91795017900006,0 -101.741899,32.91915351300003,0 -101.744470287,32.91864669100005,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name>Polygon 1</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>Polygon 1</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>Name</td>
+<td>Polygon 1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>FolderPath</td>
+<td>Green &amp; Red Holly Analysis.kmz/Green &amp; Red Holly Analysis</td>
+</tr>
+<tr>
+<td>SymbolID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>AltMode</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Clamped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Extruded</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Snippet</td>
+<td></td>
+</tr>
+<tr>
+<td>PopupInfo</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body><script type="text/javascript">
+				function changeImage(attElement, nameElement) {
+				document.getElementById('imageAttachment').src = attElement;
+				document.getElementById('imageName').innerHTML = nameElement;}
+			</script></html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> -101.7689921149999,32.91621245300007,0 -101.754012512,32.91962160400004,0 -101.757730076,32.93083676200007,0 -101.767122442,32.92893720100005,0 -101.765482514,32.92757551100004,0 -101.764495718,32.92637452200006,0 -101.763702547,32.92437899100003,0 -101.7635908949999,32.92207071000007,0 -101.764751266,32.91935040100003,0 -101.7670250529999,32.91727648100004,0 -101.769029012,32.91637047900008,0 -101.7689921149999,32.91621245300007,0</coordinates></LinearRing></outerBoundaryIs>
+          <innerBoundaryIs><LinearRing><coordinates> -101.760214273,32.92640583200006,0 -101.760215564,32.92641316000004,0 -101.760226211,32.92648724000003,0 -101.760236621,32.92655907000005,0 -101.760237619,32.92656884100006,0 -101.760242853,32.92665663400004,0 -101.760243057,32.92666353400006,0 -101.760242438,32.92667551100004,0 -101.760240583,32.92668739600003,0 -101.7602396789999,32.92669137700005,0 -101.7602285579999,32.92673670400006,0 -101.7602268809999,32.92674282900003,0 -101.760205266,32.92681428900005,0 -101.7601911309999,32.92686467700003,0 -101.760182237,32.92692604300004,0 -101.7601819659999,32.92697184900004,0 -101.760181822,32.92703727800006,0 -101.760181446,32.92710062000003,0 -101.7601809069999,32.92711112300003,0 -101.7601752149999,32.92716985400006,0 -101.7601732809999,32.92718252200007,0 -101.7601727909999,32.92718475200007,0 -101.760156168,32.92725724800005,0 -101.7601544679999,32.92726380000005,0 -101.760122272,32.92737483400003,0 -101.7601088219999,32.92742965800005,0 -101.7601245129999,32.92747517900006,0 -101.760128513,32.92748967500006,0 -101.76013037,32.92750156000005,0 -101.7601309899999,32.92751353700004,0 -101.76013037,32.92752551400002,0 -101.760128514,32.92753739900007,0 -101.76012633,32.92754616400003,0 -101.760123474,32.92755479100003,0 -101.76010574,32.92760231300008,0 -101.760096475,32.92766265400007,0 -101.760096284,32.92766385500005,0 -101.760080196,32.92776184500008,0 -101.760069707,32.92787007000004,0 -101.7600695149999,32.92792777400007,0 -101.760069323,32.92793407300007,0 -101.7600634569999,32.92803563500007,0 -101.7600633389999,32.92803743800005,0 -101.7600577059999,32.92811420000004,0 -101.760055458,32.92812997000004,0 -101.760038722,32.92820737200003,0 -101.760036131,32.92821727100005,0 -101.760032681,32.92822698400005,0 -101.7600106579999,32.92828156800005,0 -101.760009516,32.92828430300005,0 -101.760001917,32.92829913500003,0 -101.759960721,32.92836809000005,0 -101.7599354929999,32.92841851800006,0 -101.759926478,32.92843380900007,0 -101.759924295,32.92843690200004,0 -101.759886006,32.92848959200006,0 -101.759878919,32.92849854100007,0 -101.75983618,32.92854817200003,0 -101.759798819,32.92859313100007,0 -101.759790203,32.92860259600008,0 -101.759784404,32.92860811600008,0 -101.759740854,32.92864739700008,0 -101.759726569,32.92865881400007,0 -101.759715292,32.92866611200003,0 -101.759703303,32.92867255400006,0 -101.7597017639999,32.92867329300003,0 -101.759642007,32.92870166300003,0 -101.759630132,32.92870677300004,0 -101.759617803,32.92871104600005,0 -101.759614807,32.92871193800005,0 -101.759538697,32.92873389300007,0 -101.759462755,32.92875584500007,0 -101.7594506089999,32.92875891600005,0 -101.759438005,32.92876121300003,0 -101.759399156,32.92876690200006,0 -101.7593834199999,32.92876920700007,0 -101.759339649,32.92877561600005,0 -101.7592847939999,32.92879012000003,0 -101.75927465,32.92879250100003,0 -101.7592643419999,32.92879432600006,0 -101.7592548009999,32.92879550000004,0 -101.759195179,32.92880132500005,0 -101.7591873539999,32.92880192900003,0 -101.759125427,32.92880542500006,0 -101.7591221489999,32.92880557400008,0 -101.759111224,32.92880593400002,0 -101.759108194,32.92880585500006,0 -101.759097019,32.92880557400008,0 -101.759055501,32.92880508400003,0 -101.75899728,32.92880838300005,0 -101.758986357,32.92880869100003,0 -101.7589839459999,32.92880867700006,0 -101.758919165,32.92880786900002,0 -101.758848759,32.92880717300005,0 -101.7588283649999,32.92880588900005,0 -101.7587494369999,32.92879669300004,0 -101.758692175,32.92879146500007,0 -101.758681419,32.92879017500007,0 -101.758668531,32.92878780200004,0 -101.7586034349999,32.92877346100005,0 -101.7585907119999,32.92877018500008,0 -101.758498489,32.92874292000005,0 -101.758496667,32.92874237100006,0 -101.758483363,32.92873771700005,0 -101.758429673,32.92871653900005,0 -101.7583490059999,32.92869106100005,0 -101.758336604,32.92868664400004,0 -101.758324658,32.92868136900006,0 -101.7582778299999,32.92865855400004,0 -101.758209269,32.92862718200007,0 -101.758205506,32.92862540500005,0 -101.758195975,32.92862038700002,0 -101.758131017,32.92858350500006,0 -101.7581182489999,32.92857546300007,0 -101.758058659,32.92853395300006,0 -101.758057691,32.92853327300003,0 -101.758046679,32.92852472200008,0 -101.757987309,32.92847418800005,0 -101.7579782399999,32.92846580100007,0 -101.7579674309999,32.92845362900005,0 -101.757907962,32.92837830600007,0 -101.7579024789999,32.92837085600007,0 -101.757898503,32.92836468900003,0 -101.757855364,32.92829351100005,0 -101.757852725,32.92828895200006,0 -101.757809713,32.92821101100003,0 -101.757804323,32.92820002700006,0 -101.75780005,32.92818859500005,0 -101.757796973,32.92817689000003,0 -101.75779469,32.92815970400005,0 -101.757789625,32.92807190700006,0 -101.757789433,32.92806523000007,0 -101.7577899349999,32.92805446600005,0 -101.757791433,32.92804376800007,0 -101.757802467,32.92798491900004,0 -101.757802942,32.92798251900007,0 -101.75780697,32.92796794800006,0 -101.757839926,32.92787254800004,0 -101.757843248,32.92786398300007,0 -101.757845344,32.92785938500003,0 -101.7578891209999,32.92776825700003,0 -101.757892773,32.92776122600003,0 -101.757930374,32.92769400400005,0 -101.7579514829999,32.92765421400003,0 -101.757952067,32.92765312700004,0 -101.7579840559999,32.92759420500005,0 -101.758011169,32.92750117400004,0 -101.758020887,32.92743552300004,0 -101.7580319529999,32.92735063100002,0 -101.7580334519999,32.92734178400008,0 -101.7580353549999,32.92733400500003,0 -101.758048319,32.92728779700008,0 -101.758053364,32.92718654900006,0 -101.75804923,32.92713467100003,0 -101.7580396279999,32.92708213300006,0 -101.758037853,32.92706662100005,0 -101.7580329259999,32.92696134300007,0 -101.758028134,32.92687263500005,0 -101.758019895,32.92681806400003,0 -101.757996102,32.92674453500007,0 -101.757992792,32.92673204000005,0 -101.75797247,32.92663330500005,0 -101.7579473759999,32.92654712600006,0 -101.7579299229999,32.92649087400002,0 -101.757904063,32.92644437800004,0 -101.757901626,32.92643978100006,0 -101.757847688,32.92633277700003,0 -101.757844527,32.92632601500003,0 -101.7578422139999,32.92632026000007,0 -101.7578046789999,32.92621965600006,0 -101.7578008,32.92620726300004,0 -101.757784884,32.92614476000006,0 -101.7577634799999,32.92606201400002,0 -101.7577622109999,32.92605658700006,0 -101.757761111,32.92605053500006,0 -101.757750666,32.92598314400004,0 -101.757749892,32.92597712000003,0 -101.757744611,32.92592539300006,0 -101.7577440109999,32.92591360700004,0 -101.7577446399999,32.92590154200008,0 -101.757755974,32.92579309700005,0 -101.7577577169999,32.92578179500003,0 -101.757774447,32.92570003300006,0 -101.757776641,32.92569116300007,0 -101.757779434,32.92568267400003,0 -101.7578009759999,32.92562451500004,0 -101.7578390199999,32.92551641500006,0 -101.7578421109999,32.92550851700003,0 -101.757844287,32.92550375300004,0 -101.757864951,32.92546089600006,0 -101.7578967809999,32.92538592400007,0 -101.757902281,32.92537466400006,0 -101.757908728,32.92536417100007,0 -101.757952442,32.92529994900008,0 -101.7579538699999,32.92529789700006,0 -101.758010968,32.92521750300006,0 -101.7580409879999,32.92516719100007,0 -101.7580436389999,32.92516293500006,0 -101.758076321,32.92511262400006,0 -101.758078111,32.92510994000003,0 -101.758081897,32.92510468300003,0 -101.758120089,32.92505425200005,0 -101.758124545,32.92504867300005,0 -101.75815741,32.92500962700007,0 -101.758162849,32.92500353100007,0 -101.758206353,32.92495749000005,0 -101.7582074319999,32.92495636000007,0 -101.758267475,32.92489417400003,0 -101.7582690039999,32.92489261200006,0 -101.758274337,32.92488751500008,0 -101.7583505279999,32.92481820900008,0 -101.758364931,32.92480661700006,0 -101.758414134,32.92477160000004,0 -101.758425584,32.92476417800003,0 -101.758437574,32.92475773600006,0 -101.758447731,32.92475318700008,0 -101.758458243,32.92474925200003,0 -101.7585506459999,32.92471790800005,0 -101.758555717,32.92471627100008,0 -101.7585659,32.92471346200006,0 -101.758626302,32.92469878500003,0 -101.758636533,32.92469616900007,0 -101.7586399099999,32.92469539500007,0 -101.758653774,32.92469273200004,0 -101.758667874,32.92469125800005,0 -101.7586722889999,32.92469094900002,0 -101.75868206,32.92469052100006,0 -101.7588297249999,32.92468290600004,0 -101.758839506,32.92468266000003,0 -101.75884328,32.92468269500006,0 -101.7588974349999,32.92468375300007,0 -101.758914305,32.92468482500004,0 -101.759001122,32.92469417600006,0 -101.7590087729999,32.92469515700003,0 -101.759019453,32.92469705700006,0 -101.759029959,32.92469955900003,0 -101.7590842019999,32.92471413900006,0 -101.759090449,32.92471593700003,0 -101.7591020309999,32.92471992200007,0 -101.7591132159999,32.92472464700006,0 -101.759210668,32.92476982800002,0 -101.759213643,32.92477124100003,0 -101.7592231739999,32.92477626000004,0 -101.75928813,32.92481314400004,0 -101.759301864,32.92482186400002,0 -101.759312344,32.92482996300004,0 -101.759321947,32.92483880200007,0 -101.7593245209999,32.92484145600002,0 -101.7594399339999,32.92496351400007,0 -101.759500868,32.92501937700007,0 -101.759504033,32.92502236400003,0 -101.7595743749999,32.92509075100003,0 -101.7596445469999,32.92515914100005,0 -101.759646156,32.92516073100006,0 -101.759654809,32.92517024200004,0 -101.7596624459999,32.92518035300003,0 -101.7596702549999,32.92519329400005,0 -101.759697236,32.92524454100004,0 -101.7597014309999,32.92525330900003,0 -101.759705477,32.92526402800007,0 -101.7597453,32.92538672400008,0 -101.759777656,32.92544985200004,0 -101.7598099479999,32.92550894900006,0 -101.759852596,32.92556536700005,0 -101.759856312,32.92557053000007,0 -101.759861158,32.92557815400005,0 -101.7599043659999,32.92565158300005,0 -101.759910315,32.92566295900008,0 -101.759937006,32.92572097600004,0 -101.759938215,32.92572368500004,0 -101.7599427919999,32.92573608600003,0 -101.759969726,32.92582339800003,0 -101.7599724999999,32.92583413400007,0 -101.759972879,32.92583603200006,0 -101.7599888239999,32.92591908200006,0 -101.759989336,32.92592193200005,0 -101.759992374,32.92594017700003,0 -101.7599982949999,32.92594529100006,0 -101.760006528,32.92595296100006,0 -101.760015182,32.92596247200004,0 -101.76002282,32.92597258200004,0 -101.760029382,32.92598321600008,0 -101.760034823,32.92599429200004,0 -101.7600376299999,32.92600139500007,0 -101.760051528,32.92604002700006,0 -101.760073591,32.92608566100006,0 -101.760098235,32.92612830500008,0 -101.760101251,32.92613383100007,0 -101.760155121,32.92623858300004,0 -101.760158748,32.92624626100007,0 -101.760159415,32.92624783400004,0 -101.760186317,32.92631260700006,0 -101.760190601,32.92632466400005,0 -101.760211871,32.92639632400005,0 -101.760214273,32.92640583200006,0</coordinates></LinearRing></innerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

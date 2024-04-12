@@ -1,0 +1,540 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec 14 11:07:07 2023
+
+@author: Guillermo Rilova
+"""
+
+#!/usr/bin/env python
+# coding: utf-8
+
+# ### Create a directory to store GIS project and get libraries
+
+# In[1]:
+
+
+import os
+import sys
+import pandas as pd
+import numpy as np
+
+import geopandas as gpd
+import fiona
+#import rasterio
+
+
+#import folium
+
+#import contextily as ctx
+
+
+# make directory called 'gis_projects' in c drive if not exists
+
+if not os.path.exists('C:\\Users\\Guillermo Rilova\\OneDrive - Greengo Energy\\Documents\\Wind\DEVELOPMENT\R&D\\gis_projects'):
+    os.makedirs('C:\\Users\\Guillermo Rilova\\OneDrive - Greengo Energy\\Documents\\Wind\DEVELOPMENT\R&D\\gis_projects')
+
+
+#%%
+
+from arcgis.features import FeatureLayer
+from arcgis.gis import GIS
+from arcgis.features import FeatureLayerCollection
+from arcgis.geometry import Geometry
+from arcgis.features import Feature, FeatureSet
+
+import geopandas as gpd
+
+class ArcGISHandler:
+    def __init__(self):
+        # Read the configuration from a JSON file
+        # with open(r'D:/Python/Production/Config_files/config.json', 'r') as f:
+        #     config = json.load(f)
+
+        # # Extract GIS configuration and initialize GIS object
+        # gis_config = config['online_gis']
+        # self.gis = GIS(gis_config['url'], gis_config['username'], gis_config['password'])
+
+        # ! Recommend putting details into JSON as above - switch out with Thomas' details for now (I already share mine with Mara - there is a limit to how many people can share a single account)
+        self.gis = GIS('https://greengo-eu.maps.arcgis.com', 'GGE_RT', 'ARcgispro13*')  # Ray's credentials
+
+    def fetch_data_gdf(self, url: str) -> gpd.GeoDataFrame:
+        try:
+            # Create a FeatureLayer object
+            feature_layer = FeatureLayer(url, self.gis)
+            
+            # Query all features in the layer with the query() method
+            feature_set = feature_layer.query(where='1=1')
+            
+            # Convert the features to a Spatially Enabled DataFrame
+            sdf = feature_set.sdf
+            
+            # Convert the Spatially Enabled DataFrame to a GeoDataFrame
+            gdf = gpd.GeoDataFrame(sdf, geometry=sdf['SHAPE'])
+            
+            return gdf
+        except Exception as e:
+            print(f"An error occurred while fetching data from ArcGIS: {e}")
+            return None
+        
+
+
+# example of how to use the class
+# project_url = 'https://services-eu1.arcgis.com/Iu9KJRhfAInbTSB3/arcgis/rest/services/Denmark_Projects_1f1dd/FeatureServer/0'ArithmeticError
+# arcgis_handler = ArcGISHandler()
+# gdf = arcgis_handler.fetch_data_gdf(project_url)
+
+
+
+#%% get some data
+
+
+### get DK projects
+project_url = 'https://services-eu1.arcgis.com/Iu9KJRhfAInbTSB3/arcgis/rest/services/Denmark_Projects_1f1dd/FeatureServer/0'
+arcgis_handler = ArcGISHandler()
+project_dk_gdf = arcgis_handler.fetch_data_gdf(project_url)
+
+
+
+windfarms_url = 'https://services-eu1.arcgis.com/Iu9KJRhfAInbTSB3/arcgis/rest/services/Windmills_2021/FeatureServer/0'
+arcgis_handler = ArcGISHandler()
+windfarms_dk_gdf = arcgis_handler.fetch_data_gdf(windfarms_url)
+
+project_url = 'https://services-eu1.arcgis.com/Iu9KJRhfAInbTSB3/arcgis/rest/services/Neighbour_status/FeatureServer/0'
+arcgis_handler = ArcGISHandler()
+Neighbour_status = arcgis_handler.fetch_data_gdf(project_url)
+
+
+# read a shapefile
+# shapefile = 'XXXXXXXX\\DK.shp'
+# shapefile_gdf = gpd.read_file(shapefile)
+
+# print number of windfarms in DK
+print(f"Number of windfarms: {len(windfarms_dk_gdf)}")
+print(windfarms_dk_gdf.columns)
+print(f"Number of projects: {len(project_dk_gdf)}")
+print(project_dk_gdf.columns)
+
+
+windfarms_dk_gdf.plot()
+
+
+windfarms_dk_gdf.head()
+#%% Setting up Ulsted project 
+
+
+project_Ulsted = project_dk_gdf[project_dk_gdf['Project_Name'] == 'M147 - Ulsted Kær']
+#existing_Ulsted = windfarms_dk_gdf # Cannot filter this url per project
+#neighbours = Neighbour_status # Not consistent naming for the layers[Neighbour_status['ProjectArea'] == 'M147 - Ulsted Kær'] 
+
+#%% Calculate the bounds of the project area and expand by 1000m
+minx, miny, maxx, maxy = project_Ulsted.total_bounds
+
+
+buffer = 4000  # 1000 meters buffer
+bounds = [minx - buffer, miny - buffer, maxx + buffer, maxy + buffer]
+
+#%% filter the Neighbours and the wind turbines withing the area of influence
+
+from shapely.geometry import Point
+from shapely.geometry.polygon import Polygon
+
+def def_polygon_bound(bounds):
+    polygon_obj = Polygon([(bounds[0],bounds[1]),(bounds[0],bounds[3]),(bounds[2],bounds[3]),(bounds[2],bounds[1])]) # (minx,miny), (minx,maxy), (maxx,maxy), (maxx,miny)
+    return polygon_obj
+
+polygon = def_polygon_bound(bounds) # Defining polygon bounds for the project
+
+neighbours = Neighbour_status[(polygon.contains(Neighbour_status.geometry))]
+existing_Ulsted  = windfarms_dk_gdf[(polygon.contains(windfarms_dk_gdf.geometry))]
+
+#% add buffer over neighbours
+neighbours_buffer = neighbours.copy()
+neighbours_buffer['geometry'] = neighbours_buffer.geometry.buffer(600)
+#neighbours_buffer.plot(ax=ax, color='yellow', alpha=0.2, edgecolor='k')
+buffers_dissolved = neighbours_buffer.dissolve()
+
+#%% Add buffer to existing wtg for testing purposes
+existing_buffer = existing_Ulsted.copy()
+existing_buffer['geometry'] = existing_buffer.geometry.buffer(600)
+
+existing_buffers_dissolved = existing_buffer.dissolve()
+
+
+
+#%%
+
+import matplotlib.pyplot as plt
+
+
+# Create a plot
+fig, ax = plt.subplots(figsize=(10, 10))
+
+# Plot the project area
+project_Ulsted.plot(ax=ax, color='blue', edgecolor='k')
+
+# Plot the windfarms - ORIGINAL WINDFARMS
+existing_Ulsted.plot(ax=ax, color='green', edgecolor='k')
+
+# Plot the neighbours 
+neighbours.plot(ax=ax, color='red', edgecolor='k')
+
+# Set the plot limits to the calculated bounds
+#ax.set_xlim([bounds[0], bounds[2]])
+#ax.set_ylim([bounds[1], bounds[3]])
+#ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik, crs='EPSG:25832')
+
+buffers_dissolved.plot(ax=ax, color='pink', alpha=0.4, edgecolor='k')
+existing_buffers_dissolved.plot(ax=ax, color='green', alpha=0.5, edgecolor='k')
+
+
+# Optional: Add grid, labels, title, etc.
+ax.grid(True)
+ax.set_title('Project Area and Windfarms')
+ax.set_xlabel('Longitude')
+ax.set_ylabel('Latitude')
+
+
+# Show the plot
+
+plt.show()
+
+#%% Difference 
+
+dev_area = project_Ulsted.overlay(existing_buffer, how='difference')
+
+
+#%%
+import matplotlib.pyplot as plt
+ 
+fig2, ax2 = plt.subplots(figsize=(10, 10))
+
+dev_area.plot(ax=ax2, color='blue', edgecolor='k')
+
+#existing_buffers_dissolved.plot(ax=ax2, color='green', alpha=0.3, edgecolor='k')
+
+# Optional: Add grid, labels, title, etc.
+ax2.grid(True)
+ax2.set_title('Project Area and Windfarms')
+ax2.set_xlabel('Longitude')
+ax2.set_ylabel('Latitude')
+
+
+# Show the plot
+
+plt.show()
+
+#%% Climate
+from py_wake.site import UniformWeibullSite
+#specifying the necessary parameters for the UniformWeibullSite object
+site = UniformWeibullSite(p_wd = [.20,.25,.35,.25],                         # sector frequencies
+                          a = [9.176929,  9.782334,  9.531809,  9.909545],  # Weibull scale parameter
+                          k = [2.392578, 2.447266, 2.412109, 2.591797],     # Weibull shape parameter
+                          ti = 0.1                                          # turbulence intensity, optional
+                         )
+#%% Generic wtg
+import numpy as np
+from py_wake.wind_turbines import WindTurbine, WindTurbines
+from py_wake.wind_turbines.power_ct_functions import PowerCtTabular
+
+
+u = np.linspace(3, 27.5,num=50, endpoint=True)
+ct = [0.894, 0.876, 0.856, 0.838, 0.825, 0.820, 0.821, 0.824, 0.825, 0.823, 0.812,  
+      0.787, 0.750, 0.704, 0.653, 0.600, 0.545, 0.489, 0.436, 0.386, 0.342, 0.303, 
+          0.269, 0.240, 0.216, 0.195, 0.176, 0.161, 0.147, 0.134, 0.123, 0.114, 
+              0.105, 0.097, 0.090, 0.084, 0.078, 0.072, 0.067, 0.062, 0.058, 0.053, 
+                  0.049,0.046, 0.043, 0.040, 0.037, 0.035, 0.033, 0]
+    
+power = [47, 126, 252, 415, 613, 848, 1128, 1457, 1840, 2281, 2775, 3312, 3868, 4421,
+         4948, 5421, 5812, 6106, 6309, 6438, 6513, 6555, 6578, 6589, 6595, 6597, 6599,
+         6599, 6600, 6600, 6599, 6597, 6592, 6581, 6562, 6531, 6486, 6423, 6342, 6246,
+         6246, 6137, 6018, 5894, 5770, 5652, 5537, 5434, 5342, 5262, 0]
+
+my_wt = WindTurbine(name='Custom_Siemens_6_6_155RD',
+                    diameter=155,
+                    hub_height=122.5,
+                    powerCtFunction=PowerCtTabular(u,power,'kW',ct))
+
+#%% Importing more packages
+from shapely.geometry import Polygon, LineString
+
+
+from py_wake.wind_turbines import WindTurbines
+from py_wake.wind_turbines.power_ct_functions import CubePowerSimpleCt
+from py_wake.examples.data.hornsrev1 import Hornsrev1Site
+from py_wake.utils.gradients import autograd
+from py_wake import BastankhahGaussian
+
+import topfarm
+from topfarm.cost_models.cost_model_wrappers import CostModelComponent
+from topfarm.easy_drivers import EasyScipyOptimizeDriver
+from topfarm import TopFarmProblem
+from topfarm.plotting import TurbineTypePlotComponent
+from topfarm import SpacingConstraint, XYBoundaryConstraint
+from topfarm.constraint_components.boundary import TurbineSpecificBoundaryComp
+from topfarm.easy_drivers import EasyRandomSearchDriver, EasyScipyOptimizeDriver
+from topfarm.drivers.random_search_driver import randomize_turbine_type, RandomizeTurbineTypeAndPosition
+from topfarm.constraint_components.boundary import InclusionZone, ExclusionZone
+
+#%% wind turbine types 
+names=['tb1', 'tb2']
+wts = WindTurbines(names=names,
+                   diameters=[80, 120],
+                   hub_heights=[70, 110],
+                   powerCtFunctions=[CubePowerSimpleCt(ws_cutin=3, ws_cutout=25, ws_rated=12,
+                                         power_rated=2000, power_unit='kW',
+                                         ct=8 / 9, additional_models=[]),
+                                     CubePowerSimpleCt(ws_cutin=3, ws_cutout=25, ws_rated=12,
+                                         power_rated=3000, power_unit='kW',
+                                         ct=8 / 9, additional_models=[])])
+
+
+wts = my_wt
+
+
+#%% wind farm model
+wfm = BastankhahGaussian(Hornsrev1Site(), wts)
+
+#%%# Instantiate wind turbines
+
+n_wt = 10 # desired number of turbines 
+
+min_x=100000000
+min_y=100000000
+max_x=0
+max_y=0
+ 
+for indx in range(0,len(dev_area)):
+    if dev_area.iloc[indx,:].geometry.bounds[0]<min_x:
+        min_x = dev_area.iloc[indx,:].geometry.bounds[0]
+    if dev_area.iloc[indx,:].geometry.bounds[1]<min_y:
+        min_y = dev_area.iloc[indx,:].geometry.bounds[1] 
+    if dev_area.iloc[indx,:].geometry.bounds[2]>max_x:
+        max_x = dev_area.iloc[indx,:].geometry.bounds[2]
+    if dev_area.iloc[indx,:].geometry.bounds[3]>max_y:
+        max_y = dev_area.iloc[indx,:].geometry.bounds[3]  
+
+#print(min_x,min_y)
+#print(max_x,max_y)    
+   
+
+x_min, x_max = min_x, max_x # limits for x
+y_min, y_max = min_y, max_y # limits for y
+#%%
+
+def initial_positions(DEV_AREA,n_wt):
+    wt_x =[]
+    wt_y =[]
+    count=1
+    iterat= 0
+    while count< n_wt+1:
+       WT_x, WT_y = np.random.uniform(x_min, x_max, 1), np.random.uniform(y_min, y_max, 1)
+       iterat+=1
+       print(iterat)
+       if (DEV_AREA.contains(Point([WT_x,WT_y])))> 0:
+           print(DEV_AREA.contains(Point([WT_x,WT_y])),WT_x,WT_y)
+           wt_x.append(WT_x), wt_y.append(WT_y)
+           count+=1
+    return wt_x, wt_y
+
+wt_x, wt_y = initial_positions(dev_area,10)
+
+#%%
+def initial_positions(DEV_AREA,n_wt):
+    wt_x =[]
+    wt_y =[]
+    count=1
+    iterat= 0
+    while count< n_wt+1:
+       WT_x, WT_y = np.random.uniform(x_min, x_max, 1), np.random.uniform(y_min, y_max, 1)
+       iterat+=1
+       print(iterat)
+       if (DEV_AREA.contains(Point([WT_x,WT_y])))> 0:
+           print(DEV_AREA.contains(Point([WT_x,WT_y])),WT_x,WT_y)
+           wt_x.append(WT_x), wt_y.append(WT_y)
+           count+=1
+    return wt_x, wt_y
+
+wt_x, wt_y = initial_positions(dev_area.iloc[0,:].geometry,15)
+
+
+#%% Defining zones
+exploded_dev_area = dev_area.explode()
+Union_cascade = exploded_dev_area.cascaded_union
+
+zones = []
+
+for indx in range(0,len(exploded_dev_area)):
+    zones.append(InclusionZone(exploded_dev_area.iloc[indx,:].geometry))
+    
+
+#%% group all geometries in a boundary component 
+import topfarm
+from topfarm.cost_models.cost_model_wrappers import CostModelComponent
+from topfarm.easy_drivers import EasyScipyOptimizeDriver
+from topfarm import TopFarmProblem
+from topfarm.plotting import TurbineTypePlotComponent
+from topfarm import SpacingConstraint, XYBoundaryConstraint
+from topfarm.constraint_components.boundary import TurbineSpecificBoundaryComp
+from topfarm.easy_drivers import EasyRandomSearchDriver, EasyScipyOptimizeDriver
+from topfarm.drivers.random_search_driver import randomize_turbine_type, RandomizeTurbineTypeAndPosition
+from topfarm.constraint_components.boundary import InclusionZone, ExclusionZone
+
+
+#zones = [InclusionZone(dev_area)]
+
+tuku = exploded_dev_area.iloc[0,:].geometry.exterior.coords.xy
+dev_area_corrected = []
+for indx in range(0,len(tuku[0])):
+    dev_area_corrected.append([tuku[0][indx],tuku[1][indx]])
+
+zones = [InclusionZone(dev_area_corrected)]
+
+
+min_x = dev_area.iloc[0,:].geometry.bounds[0]
+min_y = dev_area.iloc[0,:].geometry.bounds[1]
+max_x = dev_area.iloc[0,:].geometry.bounds[2]
+max_y = dev_area.iloc[0,:].geometry.bounds[3]
+
+area_bounds = [[min_x, min_y], [min_x, max_y],[max_x ,max_y],[max_x,  min_y]]
+xybound = XYBoundaryConstraint([InclusionZone(area_bounds)], boundary_type='multi_polygon')
+
+
+tiki=exploded_dev_area.iloc[0,:].geometry.convex_hull.exterior.coords.xy
+tiki_bounds = np.transpose((tiki[0],tiki[1]))
+xybound = XYBoundaryConstraint([InclusionZone(tiki_bounds)], boundary_type='multi_polygon')
+
+
+xybound = XYBoundaryConstraint(zones, boundary_type='multi_polygon')
+#%%
+
+np.transpose((exploded_dev_area.iloc[0,:].geometry.exterior.coords.xy[0], exploded_dev_area.iloc[0,:].geometry.exterior.coords.xy[1]))
+zones_xx = []
+zones_yy = []
+
+zones=[]
+for indx in range(0,len(exploded_dev_area)): 
+    # zones_xx.append(exploded_dev_area.iloc[indx,:].geometry.exterior.coords.xy[0]) 
+    # zones_yy.append(exploded_dev_area.iloc[indx,:].geometry.exterior.coords.xy[1])
+    
+    zones.append(np.transpose((exploded_dev_area.iloc[indx,:].geometry.exterior.coords.xy[0],
+                               exploded_dev_area.iloc[indx,:].geometry.exterior.coords.xy[1])))
+                        
+#def flatten_comprehension(matrix):
+#    return [item for row in matrix for item in row]   
+
+# zones_xx = flatten_comprehension(zones_xx)
+# zones_yy = flatten_comprehension(zones_yy)
+
+# zones = np.transpose((zones_xx, zones_yy))
+
+#xybound = XYBoundaryConstraint([InclusionZone(zones)], boundary_type='multi_polygon')
+
+
+    
+#%%
+zones_inc = []
+for indx in range(0,len(zones)):
+    zones_inc.append(InclusionZone(zones[indx]))
+#zones_inc = [InclusionZone(zones[0]), InclusionZone(zones[1])]    
+xybound = XYBoundaryConstraint(zones_inc, boundary_type='multi_polygon')
+
+# RERUN WHEN I NEED TO DO A NEW OPTIMIZATION
+
+
+#%%
+def aep_func(x, y, type, **kwargs):
+    simres = wfm(x, y, type=type, **kwargs)
+    return simres.aep(normalize_probabilities=True).values.sum()
+
+def daep_func(x, y, type, **kwargs):
+    grad = wfm.aep_gradients(gradient_method=autograd, wrt_arg=['x', 'y'])(x, y)
+    return grad
+
+
+#%%
+from py_wake.deficit_models.gaussian import IEA37SimpleBastankhahGaussian  
+wfmodel = IEA37SimpleBastankhahGaussian(site,my_wt)
+
+#%%
+
+# AEP cost component
+# aep_comp = CostModelComponent(input_keys=[('x', wt_x), ('y', wt_y)],
+#                               n_wt=n_wt,
+#                               cost_function=aep_func,
+#                               cost_gradient_function=daep_func,
+#                               objective=True,
+#                               maximize=True,
+#                               output_keys=[('AEP', 0)],
+#                               output_unit='GWh')
+
+#%%
+from topfarm.cost_models.py_wake_wrapper import PyWakeAEPCostModelComponent 
+
+n_wd = 16
+n_wt = 25
+wd = np.linspace(0.,360.,n_wd, endpoint=False)
+cost_comp_aep2 = PyWakeAEPCostModelComponent(wfmodel, n_wt, wd=wd)
+
+wt_x2, wt_y2 = initial_positions(Union_cascade,n_wt)
+
+
+#%%
+from topfarm.plotting import NoPlot, XYPlotComp
+
+cost_comp_aep2 = PyWakeAEPCostModelComponent(wfmodel, n_wt, wd=wd)
+
+problem2 = TopFarmProblem(design_vars={'x': wt_x2,
+                                      'y': wt_y2
+                                      },
+                          cost_comp=cost_comp_aep2,
+                          constraints=xybound,
+                          driver=EasyScipyOptimizeDriver(maxiter=10000),
+                          plot_comp= XYPlotComp())
+
+
+#%%
+_, state2, _ = problem2.optimize()
+
+# %% Selecting wind farm model
+from py_wake.deficit_models.gaussian import IEA37SimpleBastankhahGaussian     #wake model
+from py_wake.examples.data.iea37 import IEA37_WindTurbines, IEA37Site         #wind turbines and site used
+from topfarm.cost_models.py_wake_wrapper import PyWakeAEPCostModelComponent   #cost model
+
+from topfarm import TopFarmProblem
+from topfarm.easy_drivers import EasyScipyOptimizeDriver
+from topfarm.examples.iea37 import get_iea37_initial, get_iea37_constraints, get_iea37_cost
+from topfarm.plotting import NoPlot, XYPlotComp
+
+n_wt = 5
+n_wd = 16
+
+
+wd = np.linspace(0.,360.,n_wd, endpoint=False)
+wfmodel = IEA37SimpleBastankhahGaussian(site,my_wt)   #PyWake's wind farm model
+
+
+
+#%% Defining Cost function Component
+
+cost_comp = PyWakeAEPCostModelComponent(wfmodel, n_wt, wd=wd)
+
+#%%
+
+initial = get_iea37_initial(n_wt)
+driver = EasyScipyOptimizeDriver()
+
+
+#%%
+design_vars = dict(zip('xy', (initial[:, :2]).T))
+
+tf_problem = TopFarmProblem(
+            design_vars,
+            cost_comp,
+            constraints=get_iea37_constraints(n_wt),
+            driver=driver,
+            plot_comp=XYPlotComp())
+
+#%%
+
+_, state, _ = tf_problem.optimize()
+

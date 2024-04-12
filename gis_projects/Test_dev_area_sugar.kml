@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Test_dev_area_sugar.kmz</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Test_dev_area_sugar</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-5.840109385065874,40.86542644317203,0 -5.865419010428697,40.84671996772979,0 -5.853400347524097,40.83259478635639,0 -5.828672197663463,40.82746136966704,0 -5.836413318941186,40.83342854069033,0 -5.822896027483441,40.83338599053852,0 -5.812052985448525,40.83364825290225,0 -5.811828287413956,40.83770787743494,0 -5.796505846937039,40.84337979714794,0 -5.79588743078661,40.84361576813318,0 -5.795474436932906,40.84392966937163,0 -5.79515968617226,40.84424427982414,0 -5.784744918414045,40.84960970402153,0 -5.772296787994694,40.85764219284574,0 -5.764346575724779,40.86596793610328,0 -5.768064910048514,40.87184440139816,0 -5.791486345783403,40.88399677664566,0 -5.809205032442231,40.88694201019051,0 -5.840109385065874,40.86542644317203,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
