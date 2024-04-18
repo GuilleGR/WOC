@@ -274,7 +274,6 @@ def initial_positions(DEV_AREA,n_wt):
 
 
 
-
 #%% Defining zones
 exploded_dev_area = dev_area.explode()
 Union_cascade = exploded_dev_area.cascaded_union

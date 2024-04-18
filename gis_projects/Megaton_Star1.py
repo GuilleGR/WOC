@@ -26,7 +26,7 @@ roughness_lengths_distribution = [1, 1, 1, 1, 1, 1, 1, 1 ,1, 1, 1, 1]
 A, k, f = get_weibull_parameters_sector(gwc_data, roughness_lengths_distribution, 115) # This comes from modifying the the returned variables from the function get_weibull_parameters
 wd = np.linspace(0, 360, len(f), endpoint=False) # or gwc_data.sector
 ti = .1
-#%%
+#%%  SAVING 
 import pickle
 
 with open(r"C:\Users\Guillermo Rilova\OneDrive - Greengo Energy\Documents\Wind\DEVELOPMENT\R&D\gis_projects\Megaton1_wind_conditions.pkl","wb") as fil:
@@ -70,6 +70,24 @@ gdf = gpd.read_file(r"C:\Users\Guillermo Rilova\OneDrive - Greengo Energy\Docume
 # Plotting dev_area
 gdf.geometry.plot()
 
+#Projecting to UTM. Zone 14N
+gdf = gdf.to_crs({'init':'epsg:32614'})
+
+#%% 
+exploded_dev_area = gdf.explode()
+Union_cascade = exploded_dev_area.cascaded_union
+#%% SITE 
+
+freq = obj[2]
+new_freq = [x/sum(freq) for x in freq]
+
+site = UniformWeibullSite(p_wd = new_freq,                         # sector frequencies
+                          a = obj[0],  # Weibull scale parameter
+                          k = obj[1],     # Weibull shape parameter
+                          ti = 0.1                                          # turbulence intensity, optional
+                         )
+
+
 #%% WIND TURBINES
 from WOC_packages import catalogue as ctl
 from py_wake.wind_turbines import WindTurbine, WindTurbines
@@ -89,7 +107,7 @@ my_wt_A = WindTurbine(name='V136 4.5',
 my_wt_B = WindTurbine(name='V172 7.2',
                     diameter=172,
                     hub_height=114,
-                    powerCtFunction=PowerCtTabular(wtg_A.WS ,wtg_A.Power,'kW',wtg_A.CT))
+                    powerCtFunction=PowerCtTabular(wtg_B.WS ,wtg_B.Power,'kW',wtg_B.CT))
 
 u = np.linspace(3, 27.5,num=50, endpoint=True)
 ct = [0.894, 0.876, 0.856, 0.838, 0.825, 0.820, 0.821, 0.824, 0.825, 0.823, 0.812,  
@@ -109,16 +127,234 @@ my_wt_C = WindTurbine(name='Custom_Siemens_6_6_155RD',
                     powerCtFunction=PowerCtTabular(u,power,'kW',ct))
 
 
+#%% WIND TURBINES
 
-# Site with wind direction dependent weibull distributed wind speed
-#uniform_weibull_site = XRSite(ds=xr.Dataset(data_vars={'Sector_frequency': ('wd', f), 'Weibull_A': ('wd', A), 'Weibull_k': ('wd', k), 'TI': ti}, coords={'wd': wd})) It does not work
+from py_wake.wind_turbines.power_ct_functions import CubePowerSimpleCt
 
-#uniform_weibull_site = UniformWeibullSite(f,                         # sector frequencies
-##                          A,  # Weibull scale parameter
- #                         k,     # Weibull shape parameter
- #                         ti                                         # turbulence intensity, optional
- #                        )
 
+windTurbines = WindTurbines(names=['V136 4.5', 'V172 7.2'],diameters=[136, 172],
+                            hub_heights=[112, 114],
+                            powerCtFunctions = [PowerCtTabular(wtg_A.WS ,wtg_A.Power,'kW',wtg_A.CT),
+                                                PowerCtTabular(wtg_B.WS ,wtg_B.Power,'kW',wtg_B.CT)])
+
+
+
+#%% group all geometries in a boundary component 
+import topfarm
+from topfarm.cost_models.cost_model_wrappers import CostModelComponent
+from topfarm.easy_drivers import EasyScipyOptimizeDriver
+from topfarm import TopFarmProblem
+from topfarm.plotting import TurbineTypePlotComponent
+from topfarm import SpacingConstraint, XYBoundaryConstraint
+from topfarm.constraint_components.boundary import TurbineSpecificBoundaryComp
+from topfarm.easy_drivers import EasyRandomSearchDriver, EasyScipyOptimizeDriver
+from topfarm.drivers.random_search_driver import randomize_turbine_type, RandomizeTurbineTypeAndPosition
+from topfarm.constraint_components.boundary import InclusionZone, ExclusionZone
+from py_wake.flow_map import Points
+from topfarm import SpacingConstraint
+from topfarm.cost_models.py_wake_wrapper import PyWakeAEPCostModelComponent 
+from py_wake.deficit_models.gaussian import IEA37SimpleBastankhahGaussian  
+from topfarm.plotting import NoPlot, XYPlotComp
+
+
+#%%
+np.transpose((exploded_dev_area.iloc[0,:].geometry.exterior.coords.xy[0], exploded_dev_area.iloc[0,:].geometry.exterior.coords.xy[1]))
+zones_xx = []
+zones_yy = []
+
+zones=[]
+for indx in range(0,len(exploded_dev_area)): 
+    zones.append(np.transpose((exploded_dev_area.iloc[indx,:].geometry.exterior.coords.xy[0],
+                               exploded_dev_area.iloc[indx,:].geometry.exterior.coords.xy[1])))
+                        
+    
+#%%
+zones_inc = []
+for indx in range(0,len(zones)):
+    zones_inc.append(InclusionZone(zones[indx]))
+#zones_inc = [InclusionZone(zones[0]), InclusionZone(zones[1])]    
+xybound = XYBoundaryConstraint(zones_inc, boundary_type='multi_polygon')
+
+
+#%%  Initial positions
+
+def initial_positions(DEV_AREA,n_wt):
+    wt_x =[]
+    wt_y =[]
+    count=1
+    iterat= 0
+    while count< n_wt+1:
+       WT_x, WT_y = np.random.uniform(x_min, x_max, 1), np.random.uniform(y_min, y_max, 1)
+       iterat+=1
+       print(iterat)
+       if (DEV_AREA.contains(Point([WT_x,WT_y])))> 0:
+           print(DEV_AREA.contains(Point([WT_x,WT_y])),WT_x,WT_y)
+           wt_x.append(WT_x), wt_y.append(WT_y)
+           count+=1
+    return wt_x, wt_y
+
+
+
+
+#%%
+
+
+from shapely.geometry import Point
+from shapely.geometry.polygon import Polygon
+
+import topfarm
+from topfarm.cost_models.cost_model_wrappers import CostModelComponent
+from topfarm.easy_drivers import EasyScipyOptimizeDriver
+from topfarm import TopFarmProblem
+from topfarm.plotting import TurbineTypePlotComponent
+from topfarm import SpacingConstraint, XYBoundaryConstraint
+from topfarm.constraint_components.boundary import TurbineSpecificBoundaryComp
+from topfarm.easy_drivers import EasyRandomSearchDriver, EasyScipyOptimizeDriver
+from topfarm.drivers.random_search_driver import randomize_turbine_type, RandomizeTurbineTypeAndPosition
+from topfarm.constraint_components.boundary import InclusionZone, ExclusionZone
+from py_wake.flow_map import Points
+from topfarm import SpacingConstraint
+from topfarm.cost_models.py_wake_wrapper import PyWakeAEPCostModelComponent 
+from py_wake.deficit_models.gaussian import IEA37SimpleBastankhahGaussian  
+from topfarm.plotting import NoPlot, XYPlotComp
+
+
+min_x=100000000
+min_y=100000000
+max_x=0
+max_y=0
+
+for indx in range(0,len(exploded_dev_area)):
+    if exploded_dev_area.iloc[indx,:].geometry.bounds[0]<min_x:
+        min_x = exploded_dev_area.iloc[indx,:].geometry.bounds[0]
+    if exploded_dev_area.iloc[indx,:].geometry.bounds[1]<min_y:
+        min_y = exploded_dev_area.iloc[indx,:].geometry.bounds[1] 
+    if exploded_dev_area.iloc[indx,:].geometry.bounds[2]>max_x:
+        max_x = exploded_dev_area.iloc[indx,:].geometry.bounds[2]
+    if exploded_dev_area.iloc[indx,:].geometry.bounds[3]>max_y:
+        max_y = exploded_dev_area.iloc[indx,:].geometry.bounds[3]  
+
+x_min, x_max = min_x, max_x # limits for x
+y_min, y_max = min_y, max_y # limits for y
+
+wt_x,wt_y = initial_positions(Union_cascade, 45)
+
+
+#%% WIND FARM MODEL 
+
+windFarmModel = IEA37SimpleBastankhahGaussian(site,windTurbines)
+
+#%%
+n_wt = 45
+init_types = 10 * [1] + 15 * [0] + 10 *[1] + 10 *[0] 
+
+tf2 = TopFarmProblem(
+    design_vars={'x': wt_x,'y': wt_y},
+    cost_comp=PyWakeAEPCostModelComponent(windFarmModel, n_wt, additional_input=[('type', np.zeros(n_wt))], grad_method=None),
+    driver=EasyScipyOptimizeDriver(maxiter=50),
+    constraints=[xybound, SpacingConstraint(760)],
+    plot_comp=XYPlotComp())
+tf2['type']=init_types
+
+x = np.linspace(x_min,x_max,500)
+y = np.linspace(y_min,y_max,500)
+YY, XX = np.meshgrid(y, x)
+
+
+#%%
+tf2.smart_start(XX, YY, tf.cost_comp.get_aep4smart_start(type=init_types))
+
+
+#%%
+
+#aep_comp = CostModelComponent(input_keys=[('x', wt_x), ('y', wt_y)],
+ #                                         n_wt=n_wt,
+  #                                        cost_function=aep_func,
+   #                                       objective=True,
+    #                                      maximize=True,
+     #                                     output_keys=[('aep', 0)],
+      #                                    output_unit='GWh')
+
+n_wt = 30
+#site2 = IEA37Site(n_wt)
+wfm = IEA37SimpleBastankhahGaussian(site,windTurbines)
+
+#%%
+
+n_wd = 12
+n_wt = 60
+wt_x, wt_y = initial_positions(Union_cascade,n_wt)
+
+#%%
+
+def aep_func(x, y, type, **kwargs):
+    simres = wfm(x, y, type=type, **kwargs)
+    return simres.aep(normalize_probabilities=True).values.sum()
+
+aep_comp = CostModelComponent(input_keys=[('x', wt_x), ('y', wt_y)],
+                                          n_wt=n_wt,
+                                          cost_function=aep_func,
+                                          objective=True,
+                                          maximize=True,
+                                          output_keys=[('aep', 0)],
+                                          output_unit='GWh')
+
+def get_aep4smart_start():
+    def aep4smart_start(X, Y, wt_x, wt_y):
+        sim_res = wfm(wt_x, wt_y, wd=np.arange(0, 360+360/n_wd, 360/n_wd), ws=[6, 8, 10])
+        H = np.full(X.shape, 100)
+        return sim_res.aep_map(Points(X, Y, H)).values
+    return aep4smart_start
+
+aep_comp.smart_start = get_aep4smart_start
+
+#%%
+problem = TopFarmProblem(design_vars={'x': wt_x,
+                                      'y': wt_y},
+                        constraints=[xybound, SpacingConstraint(760)],
+                        cost_comp=aep_comp,
+                        driver=EasyScipyOptimizeDriver(optimizer='SLSQP', maxiter=10, tol=0.1),
+                        plot_comp=XYPlotComp(),
+                        expected_cost=1e-2)
+
+
+xi = np.linspace(Union_cascade.bounds[0], Union_cascade.bounds[2], 50)
+yi = np.linspace(Union_cascade.bounds[1], Union_cascade.bounds[3], 50)
+X, Y = np.meshgrid(xi, yi)
+x_smart, y_smart = problem.smart_start(X, Y, aep_comp.smart_start(), random_pct=0, seed=1, plot=True)
+
+
+#%%
+
+init_types = 5 * [1] + 6 * [0] 
+
+problem = TopFarmProblem(design_vars={'x': wt_x,
+                                      'y': wt_y},
+                        constraints=[xybound, SpacingConstraint(760)],
+                        cost_comp=PyWakeAEPCostModelComponent(wfm, n_wt, additional_input=[('type', np.zeros(n_wt))], grad_method=None),
+                        driver=EasyScipyOptimizeDriver(optimizer='SLSQP', maxiter=10, tol=0.1),
+                        plot_comp=XYPlotComp(),
+                        expected_cost=1e-2)
+tf['type']=init_types
+
+#%%
+
+xi = np.linspace(Union_cascade.bounds[0], Union_cascade.bounds[2], 50)
+yi = np.linspace(Union_cascade.bounds[1], Union_cascade.bounds[3], 50)
+X, Y = np.meshgrid(xi, yi)
+
+
+
+#%%
+
+xi = np.linspace(Union_cascade.bounds[0], Union_cascade.bounds[2], 50)
+yi = np.linspace(Union_cascade.bounds[1], Union_cascade.bounds[3], 50)
+X, Y = np.meshgrid(xi, yi)
+x_smart, y_smart = problem.smart_start(X, Y, aep_comp.smart_start(), random_pct=0, seed=1, plot=True)
+
+
+
+    
 
 
 
