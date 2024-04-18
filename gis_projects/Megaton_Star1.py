@@ -263,6 +263,11 @@ YY, XX = np.meshgrid(y, x)
 
 #%%
 tf2.smart_start(XX, YY, tf.cost_comp.get_aep4smart_start(type=init_types))
+cost3, state3 = tf2.evaluate()
+
+#%% Optimizate
+cost4, state4, recorder4 = tf2.optimize()
+
 
 
 #%%
