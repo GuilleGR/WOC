@@ -197,7 +197,7 @@ def initial_positions(DEV_AREA,n_wt):
 
 
 #%%
-
+n_wt = 10
 
 from shapely.geometry import Point
 from shapely.geometry.polygon import Polygon
@@ -237,7 +237,7 @@ for indx in range(0,len(exploded_dev_area)):
 x_min, x_max = min_x, max_x # limits for x
 y_min, y_max = min_y, max_y # limits for y
 
-wt_x,wt_y = initial_positions(Union_cascade, 45)
+wt_x,wt_y = initial_positions(Union_cascade, n_wt)
 
 
 #%% WIND FARM MODEL 
@@ -245,16 +245,32 @@ wt_x,wt_y = initial_positions(Union_cascade, 45)
 windFarmModel = IEA37SimpleBastankhahGaussian(site,windTurbines)
 
 #%%
-n_wt = 45
-init_types = 10 * [1] + 15 * [0] + 10 *[1] + 10 *[0] 
+n_wd = 12
+aep_comp2 =PyWakeAEPCostModelComponent(windFarmModel, n_wt, additional_input=[('type', np.zeros(n_wt))], grad_method=None)
 
-tf2 = TopFarmProblem(
+
+def get_aep4smart_start():
+    def aep4smart_start(X, Y, wt_x, wt_y):
+        sim_res = windFarmModel(wt_x, wt_y, wd=np.arange(0, 360+360/n_wd, 360/n_wd), ws=[6, 8, 10])
+        H = np.full(X.shape, 100)
+        return sim_res.aep_map(Points(X, Y, H)).values
+    return aep4smart_start
+
+aep_comp2.smart_start = get_aep4smart_start
+
+
+
+#%%
+#n_wt = 10
+init_types = 5 * [1] + 5 * [0] # + 10 *[1] + 10 *[0] 
+
+tf3 = TopFarmProblem(
     design_vars={'x': wt_x,'y': wt_y},
-    cost_comp=PyWakeAEPCostModelComponent(windFarmModel, n_wt, additional_input=[('type', np.zeros(n_wt))], grad_method=None),
-    driver=EasyScipyOptimizeDriver(maxiter=50),
-    constraints=[xybound, SpacingConstraint(760)],
+    cost_comp=aep_comp2,#PyWakeAEPCostModelComponent(windFarmModel, n_wt, additional_input=[('type', np.zeros(n_wt))], grad_method=None),
+    driver=EasyScipyOptimizeDriver(maxiter=200),
+    constraints=[xybound, SpacingConstraint(300)],
     plot_comp=XYPlotComp())
-tf2['type']=init_types
+tf3['type']=init_types
 
 x = np.linspace(x_min,x_max,500)
 y = np.linspace(y_min,y_max,500)
@@ -262,11 +278,11 @@ YY, XX = np.meshgrid(y, x)
 
 
 #%%
-tf2.smart_start(XX, YY, tf.cost_comp.get_aep4smart_start(type=init_types))
-cost3, state3 = tf2.evaluate()
+tf3.smart_start(XX, YY, tf3.cost_comp.get_aep4smart_start(type=init_types))
+cost3, state3 = tf3.evaluate()
 
 #%% Optimizate
-cost4, state4, recorder4 = tf2.optimize()
+cost4, state4, recorder4 = tf3.optimize()
 
 
 
